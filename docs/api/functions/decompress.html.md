@@ -38,4 +38,4 @@ if (decompressed) {
 
 ## Defined in
 
-[src/sdk/index.ts:545](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/index.ts#L545)
+[src/sdk/index.ts:550](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/index.ts#L550)

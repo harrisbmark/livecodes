@@ -1,0 +1,181 @@
+# Nim (Wasm)
+
+[Nim](https://nim-lang.org/) is a statically typed, compiled systems programming language.
+
+In LiveCodes, Nim runs in the browser using the [Nim compiler](https://nim-lang.org/) compiled to WebAssembly. This target (Nim's `c` backend) compiles the program to C and then to WebAssembly using the [Clang](https://clang.llvm.org/) toolchain, the same one used for [C (Wasm)](./c-wasm.html.md), entirely client-side.
+
+> For Nim's JavaScript backend, which compiles to JavaScript and allows DOM access for the [result page](../features/result.html.md), see [Nim](./nim.html.md).
+
+## Usage
+
+Demo:
+
+import LiveCodes from '../../src/components/LiveCodes.tsx';
+
+export const nimWasmConfig = {
+  activeEditor: 'script',
+  script: {
+    language: 'nim-wasm',
+    content: `echo "Hello, World!"`,
+  },
+  mode: 'simple',
+  editor: 'auto',
+  tools: {
+    status: 'full',
+  },
+};
+
+<LiveCodes config={nimWasmConfig}></LiveCodes>
+
+### Communication with JavaScript
+
+The Nim code is compiled and run in a web worker. The following helpers are available in the browser global `livecodes.nimWasm` object:
+
+- `livecodes.nimWasm.input`: The standard input passed to the program.
+- `livecodes.nimWasm.loaded`: A promise that resolves when the compiler is loaded and the program has run once.
+- `livecodes.nimWasm.output`: The program's output.
+- `livecodes.nimWasm.error`: The compiler diagnostics, if the code failed to compile.
+- `livecodes.nimWasm.exitCode`: The program's exit code.
+- `livecodes.nimWasm.run`: A function that compiles and runs the code with new input. It takes a string as input and returns a promise that resolves with an object containing `output`, `error` and `exitCode`.
+
+Example:
+
+<LiveCodes template="nim-wasm" params={{ activeEditor: 'markup' }} height="80vh"></LiveCodes>
+
+## Language Info
+
+### Name
+
+`nim-wasm`
+
+### Aliases / Extensions
+
+`nimwasm`, `wasm.nim`
+
+### Editor
+
+`script`
+
+## Compiler
+
+The [Nim compiler](https://nim-lang.org/) (Nim's `c` backend) compiled to WebAssembly. The generated C is compiled and linked by the [Clang](https://clang.llvm.org/) toolchain of [@live-codes/clang-wasm](https://www.npmjs.com/package/@live-codes/clang-wasm).
+
+### Version
+
+Nim `v2.2.12`, Clang `v22.1.8`.
+
+## Custom Settings
+
+The compiler can be configured using [custom settings](../advanced/custom-settings.html.md) added to the property `nim-wasm`:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `compileArgs` | `string[]` | Extra Nim flags, e.g. `["--define:release2"]`. |
+| `args` | `string[]` | Command-line arguments passed to the program. |
+| `packages` | `boolean` | Import external packages from the bundled registry. Defaults to `true`. |
+| `libraries` | `string[] \| object` | Public GitHub links or inline library entries added to the bundled registry. See [Adding a library](#adding-a-library). |
+
+```json title="Custom Settings"
+{
+  "nim-wasm": {
+    "compileArgs": ["--define:release2"],
+    "args": ["--name", "LiveCodes"]
+  }
+}
+```
+
+## External Packages
+
+Programs can import one of 41 Nimble packages from a pinned registry. A package is fetched — its source
+files, from its Git repository at a fixed commit — only when a program imports it, so the initial
+download is unchanged:
+
+```nim
+import jsony
+
+type User = object
+  name: string
+  age: int
+
+echo """{"name":"Ada","age":36}""".fromJson(User)
+echo User(name: "Ada", age: 36).toJson
+```
+
+This target compiles through Nim's C backend, so the packages that need C memory or `stdin`/`stdout`
+are available as well: `compactdict`, `mustache`, `zippy`, `msgpack4nim`, `nimsvg`, `cligen`, `argparse`,
+`docopt` and `nimcrypto`. `results` works here too, as it does on the JavaScript target. The
+JavaScript-only packages (`karax`, `nimquery`, `strunicode`) are not. The rest of the 41-package registry
+— JSON/YAML/TOML, parsers, text and Unicode (`stew` included), maths, data structures, iterator and
+functional helpers (`zero_functional` included), colour, serialization/compression, templating and timing —
+works here too. Other Nimble packages are not available, and packages that need a C library, sockets,
+threads or a subprocess cannot run in the browser.
+
+### Adding a library
+
+The registry above is fixed. `libraries` adds entries to it from [custom settings](../advanced/custom-settings.html.md), without rebuilding anything:
+
+```json title="Custom Settings"
+{
+  "nim-wasm": {
+    "libraries": ["https://github.com/nim-lang/checksums"]
+  }
+}
+```
+
+It can then be used in a program:
+
+```nim
+import checksums/sha1
+
+echo $secureHash("Hello World")
+```
+
+Each array item is a public GitHub repository link (optionally `/tree/<ref>`), or an object with `url` and optional `name`, `ref`, `modules`, `requires` and `backends`. Sources that are not in a public repository can be inlined:
+
+```json title="Custom Settings"
+{
+  "nim-wasm": {
+    "libraries": {
+      "mylib": {
+        "modules": ["mylib"],
+        "files": {
+          "mylib.nim": "proc hi*(): string = \"hi\"\n"
+        }
+      }
+    }
+  }
+}
+```
+
+A library is resolved in the worker when the program runs, and the bundled registry stays available. User libraries are not hash-pinned: they are whatever the repository or the custom settings supply. Only public GitHub repositories are fetched; for private sources, use the package's `libraryFromFiles` API.
+
+Set `"packages": false` to turn package imports off. Adding an entry to `libraries` enables the package loader even when `packages` is `false`, and brings the bundled registry with it.
+
+## Live Reload
+
+By default, new code changes are sent to the result page without a full page reload, avoiding the need to re-download the compiler. Adding the code comment `# __livecodes_reload__` forces a full page reload.
+
+## Example Usage
+
+```nim
+import std/strutils
+
+echo "Hello, World!"
+
+let name = stdin.readLine()
+echo "Hello, ", name, "!"
+```
+
+This target supports standard input, command-line arguments and real exit codes. A program that reads standard input gets an end-of-input error when it is left blank.
+
+## Starter Template
+
+https://livecodes.io/?template=nim-wasm
+
+## Links
+
+- [Nim official website](https://nim-lang.org/)
+- [Nim manual](https://nim-lang.org/docs/manual.html)
+- [Nim standard library](https://nim-lang.org/docs/lib.html)
+- [@live-codes/nim-wasm](https://www.npmjs.com/package/@live-codes/nim-wasm)
+- [C (Wasm)](./c-wasm.html.md) in LiveCodes

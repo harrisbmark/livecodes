@@ -22,7 +22,7 @@ export type Prettify<T> = {
 /**
  * Language name, alias or extension.
  */
-export type Language = 'html' | 'htm' | 'markdown' | 'md' | 'mdown' | 'mkdn' | 'mdx' | 'astro' | 'pug' | 'jade' | 'haml' | 'asciidoc' | 'adoc' | 'asc' | 'mustache' | 'handlebars' | 'hbs' | 'ejs' | 'eta' | 'nunjucks' | 'njk' | 'liquid' | 'liquidjs' | 'dot' | 'twig' | 'vento' | 'vto' | 'art-template' | 'art' | 'jinja' | 'bbcode' | 'bb' | 'mjml' | 'diagrams' | 'diagram' | 'graph' | 'plt' | 'richtext' | 'rte' | 'rich' | 'rte.html' | 'css' | 'scss' | 'sass' | 'less' | 'stylus' | 'styl' | 'stylis' | 'postcss' | 'javascript' | 'js' | 'mjs' | 'json' | 'babel' | 'es' | 'sucrase' | 'typescript' | 'flow' | 'ts' | 'mts' | 'jsx' | 'tsx' | 'react' | 'react-jsx' | 'react.jsx' | 'react-tsx' | 'react.tsx' | 'react-native' | 'react-native.jsx' | 'react-native-tsx' | 'react-native.tsx' | 'vue' | 'vue3' | 'vue2' | 'vue-app' | 'app.vue' | 'svelte' | 'svelte-app' | 'app.svelte' | 'stencil' | 'stencil.tsx' | 'solid' | 'solid.jsx' | 'solid.tsx' | 'riot' | 'riotjs' | 'malina' | 'malinajs' | 'ripple' | 'ripplejs' | 'xht' | 'coffeescript' | 'coffee' | 'livescript' | 'ls' | 'civet' | 'clio' | 'imba' | 'assemblyscript' | 'as' | 'python' | 'py' | 'pyodide' | 'python-wasm' | 'py-wasm' | 'pythonwasm' | 'pywasm' | 'py3' | 'wasm.py' | 'r' | 'rlang' | 'rstats' | 'r-wasm' | 'ruby' | 'rb' | 'ruby-wasm' | 'wasm.rb' | 'rubywasm' | 'go' | 'golang' | 'go-wasm' | 'wasm.go' | 'gowasm' | 'php' | 'php-wasm' | 'phpwasm' | 'wasm.php' | 'cpp' | 'c' | 'C' | 'cp' | 'cxx' | 'c++' | 'cppm' | 'ixx' | 'ii' | 'hpp' | 'h' | 'cpp-wasm' | 'cppwasm' | 'cwasm' | 'wasm.cpp' | 'clang' | 'clang.cpp' | 'java' | 'csharp' | 'csharp-wasm' | 'cs' | 'cs-wasm' | 'wasm.cs' | 'perl' | 'pl' | 'pm' | 'lua' | 'lua-wasm' | 'luawasm' | 'wasm.lua' | 'teal' | 'tl' | 'fennel' | 'fnl' | 'julia' | 'jl' | 'scheme' | 'scm' | 'commonlisp' | 'common-lisp' | 'lisp' | 'clojurescript' | 'clojure' | 'cljs' | 'clj' | 'cljc' | 'edn' | 'gleam' | 'swift' | 'rescript' | 'res' | 'resi' | 'reason' | 're' | 'rei' | 'ocaml' | 'ml' | 'mli' | 'tcl' | 'wat' | 'wast' | 'webassembly' | 'wasm' | 'Binary' | 'sql' | 'sqlite' | 'sqlite3' | 'pg.sql' | 'pgsql.sql' | 'pgsql' | 'pg' | 'pglite' | 'pglite.sql' | 'postgresql' | 'postgres' | 'postgre.sql' | 'postgresql.sql' | 'prolog.pl' | 'prolog' | 'minizinc' | 'mzn' | 'dzn' | 'blockly' | 'blockly.xml' | 'xml' | 'pintora';
+export type Language = 'html' | 'htm' | 'markdown' | 'md' | 'mdown' | 'mkdn' | 'mdx' | 'astro' | 'pug' | 'jade' | 'haml' | 'asciidoc' | 'adoc' | 'asc' | 'mustache' | 'handlebars' | 'hbs' | 'ejs' | 'eta' | 'nunjucks' | 'njk' | 'liquid' | 'liquidjs' | 'dot' | 'twig' | 'vento' | 'vto' | 'art-template' | 'art' | 'jinja' | 'bbcode' | 'bb' | 'mjml' | 'diagrams' | 'diagram' | 'graph' | 'plt' | 'richtext' | 'rte' | 'rich' | 'rte.html' | 'css' | 'scss' | 'sass' | 'less' | 'stylus' | 'styl' | 'stylis' | 'postcss' | 'javascript' | 'js' | 'mjs' | 'json' | 'babel' | 'es' | 'sucrase' | 'typescript' | 'flow' | 'ts' | 'mts' | 'jsx' | 'tsx' | 'react' | 'react-jsx' | 'react.jsx' | 'react-tsx' | 'react.tsx' | 'react-native' | 'react-native.jsx' | 'react-native-tsx' | 'react-native.tsx' | 'vue' | 'vue3' | 'vue2' | 'vue-app' | 'app.vue' | 'svelte' | 'svelte-app' | 'app.svelte' | 'stencil' | 'stencil.tsx' | 'solid' | 'solid.jsx' | 'solid.tsx' | 'riot' | 'riotjs' | 'malina' | 'malinajs' | 'ripple' | 'ripplejs' | 'xht' | 'coffeescript' | 'coffee' | 'livescript' | 'ls' | 'civet' | 'clio' | 'imba' | 'elm' | 'assemblyscript' | 'as' | 'python' | 'py' | 'pyodide' | 'python-wasm' | 'py-wasm' | 'pythonwasm' | 'pywasm' | 'py3' | 'wasm.py' | 'r' | 'rlang' | 'rstats' | 'r-wasm' | 'ruby' | 'rb' | 'ruby-wasm' | 'wasm.rb' | 'rubywasm' | 'go' | 'golang' | 'go-wasm' | 'wasm.go' | 'gowasm' | 'php' | 'php-wasm' | 'phpwasm' | 'wasm.php' | 'cpp' | 'cc' | 'c' | 'C' | 'cp' | 'cxx' | 'c++' | 'cppm' | 'ixx' | 'ii' | 'hpp' | 'h' | 'cwasm' | 'c-wasm' | 'wasm.c' | 'clang.c' | 'clang-c' | 'cobol' | 'cob' | 'cbl' | 'cpy' | 'gnucobol' | 'cobol-wasm' | 'wasm.cobol' | 'fortran' | 'f90' | 'f95' | 'f03' | 'f08' | 'f' | 'for' | 'ftn' | 'fortran-wasm' | 'lfortran' | 'd' | 'di' | 'dlang' | 'dmd' | 'd-wasm' | 'dart' | 'dartlang' | 'flutter' | 'v' | 'vlang' | 'v-wasm' | 'wasm.v' | 'vsh' | 'cpp-wasm' | 'cppwasm' | 'wasm.cpp' | 'clang' | 'clang.cpp' | 'clang-cpp' | 'objc' | 'objc-wasm' | 'objective-c' | 'wasm.m' | 'clang.m' | 'clang-objc' | 'm' | 'objcpp' | 'objcpp-wasm' | 'objc++' | 'objective-c++' | 'wasm.mm' | 'clang.mm' | 'clang-objcpp' | 'mm' | 'java' | 'java-wasm' | 'java-8' | 'java8' | 'csharp' | 'csharp-wasm' | 'cs' | 'cs-wasm' | 'wasm.cs' | 'blazor' | 'blazor-wasm' | 'razor' | 'razor-wasm' | 'wasm.razor' | 'vb' | 'vb-wasm' | 'vbnet' | 'wasm.vb' | 'fsharp' | 'fs' | 'fsx' | 'fsharp-wasm' | 'fs-wasm' | 'wasm.fs' | 'wasm.fsx' | 'fanak' | 'fnk' | 'rust' | 'rs' | 'rust-wasm' | 'rs-wasm' | 'wasm.rs' | 'scala' | 'scala-wasm' | 'wasm.scala' | 'pascal' | 'pas' | 'pp' | 'pas2js' | 'perl' | 'pl' | 'pm' | 'lua' | 'lua-wasm' | 'luawasm' | 'wasm.lua' | 'teal' | 'tl' | 'fennel' | 'fnl' | 'julia' | 'jl' | 'haskell' | 'hs' | 'lhs' | 'haskell-wasm' | 'hs-wasm' | 'wasm.hs' | 'hswasm' | 'scheme' | 'scm' | 'commonlisp' | 'common-lisp' | 'lisp' | 'clojurescript' | 'clojurescript-cherry' | 'cljs-cherry' | 'clojurescript-selfhosted' | 'cljs-selfhosted' | 'clojure' | 'cljs' | 'clj' | 'cljc' | 'edn' | 'gleam' | 'swift' | 'swift-wasm' | 'wasm.swift' | 'ada' | 'ada-wasm' | 'adb' | 'ads' | 'hac' | 'wasm.ada' | 'rust' | 'zig' | 'zig-wasm' | 'rescript' | 'res' | 'resi' | 'reason' | 're' | 'rei' | 'ocaml' | 'ml' | 'mli' | 'ocaml-js' | 'js.ocaml' | 'js.ml' | 'rescript-ocaml' | 'cr' | 'crystal' | 'crystal-wasm' | 'odin' | 'odin-wasm' | 'nim' | 'nims' | 'nimble' | 'nim-wasm' | 'nimwasm' | 'wasm.nim' | 'nim-js' | 'js.nim' | 'janet' | 'janet-wasm' | 'wasm.janet' | 'tcl' | 'wat' | 'wast' | 'webassembly' | 'wasm' | 'Binary' | 'assembly-wasm' | 'assembly' | 'asm' | 'asm-wasm' | 'x86' | 'x86-64' | 'nasm' | 'wasm.asm' | 'sql' | 'sqlite' | 'sqlite3' | 'pg.sql' | 'pgsql.sql' | 'pgsql' | 'pg' | 'pglite' | 'pglite.sql' | 'postgresql' | 'postgres' | 'postgre.sql' | 'postgresql.sql' | 'duckdb' | 'duckdb.sql' | 'prolog.pl' | 'prolog' | 'minizinc' | 'mzn' | 'dzn' | 'blockly' | 'blockly.xml' | 'xml' | 'pintora';
 /**
  * The identifier for each code editor pane in the playground.
  */
@@ -56,11 +56,11 @@ export type CDN = 'jspm' | 'skypack' | 'jsdelivr' | 'fastly.jsdelivr' | 'gcore.j
 /**
  * Supported UI/app languages for localization.
  */
-export type AppLanguage = 'auto' | 'ar' | 'bn' | 'de' | 'en' | 'es' | 'fa' | 'fr' | 'hi' | 'id' | 'it' | 'ja' | 'nl' | 'pt' | 'tr' | 'ru' | 'ur' | 'zh-CN';
+export type AppLanguage = 'auto' | 'ar' | 'bn' | 'de' | 'en' | 'es' | 'fa' | 'fr' | 'hi' | 'hu' | 'id' | 'it' | 'ja' | 'nl' | 'pt' | 'tr' | 'ru' | 'ur' | 'zh-CN';
 /**
  * Starter template names.
  */
-export type TemplateName = 'blank' | 'javascript' | 'typescript' | 'react' | 'react-native' | 'vue2' | 'vue' | 'angular' | 'preact' | 'svelte' | 'solid' | 'lit' | 'stencil' | 'mdx' | 'astro' | 'riot' | 'malina' | 'jquery' | 'backbone' | 'knockout' | 'jest' | 'jest-react' | 'bootstrap' | 'tailwindcss' | 'shadcn-ui' | 'daisyui' | 'd3' | 'phaser' | 'coffeescript' | 'livescript' | 'civet' | 'clio' | 'imba' | 'rescript' | 'reason' | 'ocaml' | 'python' | 'python-wasm' | 'r' | 'ruby' | 'ruby-wasm' | 'go' | 'go-wasm' | 'php' | 'php-wasm' | 'cpp' | 'cpp-wasm' | 'java' | 'csharp-wasm' | 'perl' | 'lua' | 'lua-wasm' | 'teal' | 'fennel' | 'julia' | 'scheme' | 'commonlisp' | 'clojurescript' | 'gleam' | 'tcl' | 'markdown' | 'assemblyscript' | 'wat' | 'sql' | 'postgresql' | 'prolog' | 'minizinc' | 'blockly' | 'diagrams';
+export type TemplateName = 'blank' | 'javascript' | 'typescript' | 'react' | 'react-native' | 'vue2' | 'vue' | 'angular' | 'preact' | 'svelte' | 'solid' | 'lit' | 'stencil' | 'mdx' | 'astro' | 'riot' | 'malina' | 'jquery' | 'backbone' | 'knockout' | 'jest' | 'jest-react' | 'bootstrap' | 'tailwindcss' | 'shadcn-ui' | 'daisyui' | 'd3' | 'phaser' | 'coffeescript' | 'livescript' | 'civet' | 'clio' | 'imba' | 'rescript' | 'reason' | 'ocaml' | 'ocaml-js' | 'nim' | 'nim-wasm' | 'janet-wasm' | 'python' | 'python-wasm' | 'r' | 'ruby' | 'ruby-wasm' | 'go' | 'go-wasm' | 'php' | 'php-wasm' | 'cpp' | 'c-wasm' | 'cpp-wasm' | 'objc-wasm' | 'fortran-wasm' | 'd-wasm' | 'crystal-wasm' | 'odin-wasm' | 'cobol-wasm' | 'v-wasm' | 'java' | 'csharp-wasm' | 'blazor-wasm' | 'vb-wasm' | 'fsharp' | 'fsharp-wasm' | 'fanak' | 'rust-wasm' | 'scala' | 'swift-wasm' | 'ada-wasm' | 'zig-wasm' | 'pascal' | 'perl' | 'lua' | 'lua-wasm' | 'teal' | 'fennel' | 'julia' | 'haskell' | 'haskell-wasm' | 'scheme' | 'commonlisp' | 'clojurescript-cherry' | 'clojurescript-selfhosted' | 'gleam' | 'elm' | 'tcl' | 'markdown' | 'assemblyscript' | 'wat' | 'assembly-wasm' | 'sql' | 'postgresql' | 'duckdb' | 'prolog' | 'minizinc' | 'blockly' | 'diagrams' | 'dart' | 'flutter';
 /**
  * Tools in the tools pane.
  */
@@ -80,15 +80,15 @@ export type ScreenName = 'login' | 'info' | 'new' | 'open' | 'assets' | 'add-ass
 /**
  * Themes for the Monaco editor.
  */
-export type MonacoTheme = 'active4d' | 'all-hallows-eve' | 'amy' | 'birds-of-paradise' | 'blackboard' | 'brilliance-black' | 'brilliance-dull' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'chrome-devtools' | 'clouds-midnight' | 'clouds' | 'cobalt' | 'cobalt2' | 'custom-vs-light' | 'custom-vs-dark' | 'dawn' | 'dracula' | 'dreamweaver' | 'eiffel' | 'espresso-libre' | 'github' | 'github-dark' | 'github-light' | 'hc-black' | 'hc-light' | 'idle' | 'idlefingers' | 'iplastic' | 'katzenmilch' | 'krtheme' | 'kuroir' | 'lazy' | 'magicwb-amiga' | 'merbivore-soft' | 'merbivore' | 'monochrome' | 'monochrome-dark' | 'monokai' | 'monokai-bright' | 'monoindustrial' | 'night-owl' | 'nord' | 'oceanic-next' | 'pastels-on-dark' | 'slush-and-poppies' | 'solarized-dark' | 'solarized-light' | 'spacecadet' | 'sunburst' | 'textmate-mac-classic' | 'tomorrow' | 'tomorrow-night' | 'tomorrow-night-blue' | 'tomorrow-night-bright' | 'tomorrow-night-eighties' | 'twilight' | 'upstream-sunburst' | 'vibrant-ink' | 'vs' | 'vs-dark' | 'xcode-default' | 'zenburnesque';
+export type MonacoTheme = 'active4d' | 'all-hallows-eve' | 'amy' | 'birds-of-paradise' | 'blackboard' | 'brilliance-black' | 'brilliance-dull' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'chrome-devtools' | 'clouds-midnight' | 'clouds' | 'cobalt' | 'cobalt2' | 'custom-vs-light' | 'custom-vs-dark' | 'dawn' | 'dracula' | 'dreamweaver' | 'eiffel' | 'espresso-libre' | 'github' | 'github-dark' | 'github-light' | 'hc-black' | 'hc-light' | 'idle' | 'idlefingers' | 'iplastic' | 'katzenmilch' | 'krtheme' | 'kuroir' | 'lazy' | 'livecodes-dark' | 'livecodes-light' | 'magicwb-amiga' | 'merbivore-soft' | 'merbivore' | 'monochrome' | 'monochrome-dark' | 'monokai' | 'monokai-bright' | 'monoindustrial' | 'night-owl' | 'nord' | 'oceanic-next' | 'pastels-on-dark' | 'slush-and-poppies' | 'solarized-dark' | 'solarized-light' | 'spacecadet' | 'sunburst' | 'textmate-mac-classic' | 'tomorrow' | 'tomorrow-night' | 'tomorrow-night-blue' | 'tomorrow-night-bright' | 'tomorrow-night-eighties' | 'twilight' | 'upstream-sunburst' | 'vibrant-ink' | 'vs' | 'vs-dark' | 'xcode-default' | 'zenburnesque';
 /**
  * Themes for the CodeMirror editor.
  */
-export type CodemirrorTheme = 'amy' | 'aura' | 'ayu-light' | 'barf' | 'basic-light' | 'basic-dark' | 'bespin' | 'birds-of-paradise' | 'boys-and-girls' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'clouds' | 'cm-light' | 'cobalt' | 'cool-glow' | 'dracula' | 'espresso' | 'github-dark' | 'github-light' | 'gruvbox-dark' | 'gruvbox-light' | 'material-dark' | 'material-light' | 'monochrome' | 'monochrome-dark' | 'noctis-lilac' | 'nord' | 'one-dark' | 'rose-pine-dawn' | 'smoothy' | 'solarized-light' | 'solarized-dark' | 'tokyo-night' | 'tokyo-night-day' | 'tokyo-night-storm' | 'tomorrow';
+export type CodemirrorTheme = 'amy' | 'aura' | 'ayu-light' | 'barf' | 'basic-light' | 'basic-dark' | 'bespin' | 'birds-of-paradise' | 'boys-and-girls' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'clouds' | 'cm-light' | 'cobalt' | 'cool-glow' | 'dracula' | 'espresso' | 'github-dark' | 'github-light' | 'gruvbox-dark' | 'gruvbox-light' | 'livecodes-dark' | 'livecodes-light' | 'material-dark' | 'material-light' | 'monochrome' | 'monochrome-dark' | 'noctis-lilac' | 'nord' | 'one-dark' | 'rose-pine-dawn' | 'smoothy' | 'solarized-light' | 'solarized-dark' | 'tokyo-night' | 'tokyo-night-day' | 'tokyo-night-storm' | 'tomorrow';
 /**
  * Themes for the CodeJar editor.
  */
-export type CodejarTheme = 'a11y-dark' | 'atom-dark' | 'base16-ateliersulphurpool-light' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'cb' | 'coldark-cold' | 'coldark-dark' | 'coy' | 'coy-without-shadows' | 'darcula' | 'dark' | 'dracula' | 'duotone-dark' | 'duotone-earth' | 'duotone-forest' | 'duotone-light' | 'duotone-sea' | 'duotone-space' | 'funky' | 'ghcolors' | 'gruvbox-dark' | 'gruvbox-light' | 'holi-theme' | 'hopscotch' | 'laserwave' | 'lucario' | 'material-dark' | 'material-light' | 'material-oceanic' | 'monochrome' | 'monochrome-dark' | 'night-owl' | 'nord' | 'nord-2' | 'okaidia' | 'one-dark' | 'one-light' | 'pojoaque' | 'shades-of-purple' | 'solarized-dark-atom' | 'solarized-light' | 'synthwave84' | 'tomorrow' | 'twilight' | 'vs' | 'vsc-dark-plus' | 'xonokai' | 'z-touchs';
+export type CodejarTheme = 'a11y-dark' | 'atom-dark' | 'base16-ateliersulphurpool-light' | 'catppuccin-latte' | 'catppuccin-frappe' | 'catppuccin-macchiato' | 'catppuccin-mocha' | 'cb' | 'coldark-cold' | 'coldark-dark' | 'coy' | 'coy-without-shadows' | 'darcula' | 'dark' | 'dracula' | 'duotone-dark' | 'duotone-earth' | 'duotone-forest' | 'duotone-light' | 'duotone-sea' | 'duotone-space' | 'funky' | 'ghcolors' | 'gruvbox-dark' | 'gruvbox-light' | 'holi-theme' | 'hopscotch' | 'laserwave' | 'livecodes-dark' | 'livecodes-light' | 'lucario' | 'material-dark' | 'material-light' | 'material-oceanic' | 'monochrome' | 'monochrome-dark' | 'night-owl' | 'nord' | 'nord-2' | 'okaidia' | 'one-dark' | 'one-light' | 'pojoaque' | 'shades-of-purple' | 'solarized-dark-atom' | 'solarized-light' | 'synthwave84' | 'tomorrow' | 'twilight' | 'vs' | 'vsc-dark-plus' | 'xonokai' | 'z-touchs';
 /**
  * Editor theme that can be a Monaco, CodeMirror, or CodeJar theme,
  * optionally with editor prefix and/or a theme suffix (light/dark).
@@ -200,7 +200,7 @@ export type CustomSettings = Partial<{
         data?: any;
         prerender?: boolean;
     };
-    scriptType: 'module' | 'application/javascript' | 'application/ecmascript' | 'text/javascript' | 'text/ecmascript' | '' | 'text/liquid' | 'text/python' | 'text/r' | 'text/ruby-wasm' | 'text/x-uniter-php' | 'text/php-wasm' | 'text/cpp' | 'text/java' | 'text/csharp-wasm' | 'text/perl' | 'text/julia' | 'text/biwascheme' | 'text/commonlisp' | 'text/tcl' | 'text/prolog' | 'text/minizinc' | 'text/go-wasm' | 'application/json' | 'application/lua' | 'text/fennel' | 'application/wasm-uint8';
+    scriptType: 'module' | 'application/javascript' | 'application/ecmascript' | 'text/javascript' | 'text/ecmascript' | '' | 'text/liquid' | 'text/python' | 'text/r' | 'text/ruby-wasm' | 'text/scala-wasm' | 'text/x-uniter-php' | 'text/php-wasm' | 'text/c-wasm' | 'text/cpp' | 'text/cpp-wasm' | 'text/objc-wasm' | 'text/objcpp-wasm' | 'text/nim-wasm' | 'text/java' | 'text/csharp-wasm' | 'text/razor' | 'text/fanak' | 'text/vb-wasm' | 'text/perl' | 'text/julia' | 'text/biwascheme' | 'text/commonlisp' | 'text/tcl' | 'text/prolog' | 'text/haskell' | 'text/haskell-wasm' | 'text/minizinc' | 'text/go-wasm' | 'text/zig-wasm' | 'text/v-wasm' | 'application/json' | 'application/lua' | 'text/fennel' | 'application/wasm-uint8';
     mapImports: boolean;
     imports: Record<string, string>;
     convertCommonjs: boolean;
@@ -422,7 +422,7 @@ export interface AppConfig {
      * Sets the [display mode](https://livecodes.io/docs/features/display-modes).
      * @default "full"
      */
-    mode: 'full' | 'focus' | 'lite' | 'simple' | 'editor' | 'codeblock' | 'result';
+    mode: 'full' | 'focus' | 'lite' | 'simple' | 'console' | 'editor' | 'codeblock' | 'result';
     /**
      * Sets enabled and active tools and status of [tools pane](https://livecodes.io/docs/features/tools-pane).
      * @default { enabled: "all", active: "", status: "" }
@@ -438,7 +438,7 @@ export interface AppConfig {
      * ```
      */
     tools: Partial<{
-        enabled: ToolName[] | 'all';
+        enabled: Array<ToolName | 'zoom'> | 'all';
         active: ToolName | '';
         status: ToolsPaneStatus;
     }>;
@@ -446,6 +446,12 @@ export interface AppConfig {
      * Sets result page [zoom level](https://livecodes.io/docs/features/result#result-page-zoom).
      */
     zoom: 1 | 0.5 | 0.25;
+    /**
+     * If `true`, the link on LiveCodes logo ("Edit on LiveCodes") is disabled in [embeds](https://livecodes.io/docs/features/embeds).
+     *
+     * @default false
+     */
+    disableHomeLink: boolean;
 }
 /**
  * The properties that define the content of the current [project](https://livecodes.io/docs/features/projects).
@@ -660,7 +666,7 @@ export interface Code {
 /**
  * Union of all watch function types for playground events.
  */
-export type WatchFns = WatchLoad | WatchReady | WatchCode | WatchConsole | WatchTests | WatchDestroy;
+export type WatchFns = WatchLoad | WatchReady | WatchCode | WatchRun | WatchConsole | WatchTests | WatchDestroy;
 /**
  * Called when the playground first loads.
  */
@@ -676,7 +682,7 @@ export type WatchReady = (event: 'ready', fn: (data: {
     remove: () => void;
 };
 /**
- * Called when the playground "content" is changed (see [`getCode`](https://livecodes.io/docs/sdk/js-ts#getcode) and [`getConfig`](https://livecodes.io/docs/sdk/js-ts#getcode)).
+ * Called when the playground code is changed (see [`getCode`](https://livecodes.io/docs/sdk/js-ts#getcode) and [`getConfig`](https://livecodes.io/docs/sdk/js-ts#getcode)).
  *
  * This includes changes in:
  * - Code (in editors)
@@ -688,10 +694,16 @@ export type WatchReady = (event: 'ready', fn: (data: {
  * - Project title
  * - [Test](https://livecodes.io/docs/features/tests) code
  */
-/**
- * Watch function type for code changes in the playground.
- */
 export type WatchCode = (event: 'code', fn: (data: {
+    code: Code;
+    config: Config;
+}) => void) => {
+    remove: () => void;
+};
+/**
+ * Called when running the playground code.
+ */
+export type WatchRun = (event: 'run', fn: (data: {
     code: Code;
     config: Config;
 }) => void) => {
@@ -887,7 +899,7 @@ export interface API {
      * Allows to watch for various playground events.
      * It takes 2 arguments: event name and a callback function that will be called on every event.
      *
-     * event name can be one of: `"load" | "ready" | "code" | "console" | "tests" | "destroy"`
+     * event name can be one of: `"load" | "ready" | "code" | "run" | "console" | "tests" | "destroy"`
      *
      * In some events, the callback function will be called with an object that supplies relevant data to the callback function (e.g. code, console output, test results).
      *

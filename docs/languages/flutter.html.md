@@ -1,0 +1,136 @@
+# Flutter
+
+[Flutter](https://flutter.dev/) is Google's open-source framework for building natively compiled, multi-platform applications from a single codebase.
+
+Flutter in LiveCodes is compiled in the browser, with no server, using the same client-side toolchain as [Dart](./dart.html.md) — packaged as [`@live-codes/dart-wasm`](https://www.npmjs.com/package/@live-codes/dart-wasm). The compiled app then boots the Flutter engine in the result page.
+
+:::info
+
+For Dart language support in LiveCodes, see [Dart](./dart.html.md).
+
+:::
+
+## Usage
+
+Demo:
+
+import LiveCodes from '../../src/components/LiveCodes.tsx';
+
+export const flutterConfig = {
+  activeEditor: 'script',
+  script: {
+    language: 'flutter',
+    content: `import 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(\n    const Center(\n      child: Text('Hello, World!', textDirection: TextDirection.ltr),\n    ),\n  );\n}`,
+  },
+  mode: 'simple',
+  editor: 'auto',
+};
+
+<LiveCodes config={flutterConfig}></LiveCodes>
+
+The app renders in the context of the [result page](../features/result.html.md), so it fills the result pane and responds to user interaction, just like any other Flutter web app.
+
+A stateful counter is the usual way to see a rebuild:
+
+```ts
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const CounterApp());
+}
+
+class CounterApp extends StatefulWidget {
+  const CounterApp({super.key});
+
+  @override
+  State<CounterApp> createState() => _CounterAppState();
+}
+
+class _CounterAppState extends State<CounterApp> {
+  int _count = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('$_count', style: const TextStyle(fontSize: 56)),
+              const SizedBox(height: 12),
+              ElevatedButton(
+                onPressed: () => setState(() => _count++),
+                child: const Text('Increment'),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+### Root Element
+
+Flutter draws its own UI, so it renders into an element in the [result page](../features/result.html.md).
+Use `"livecodes-app"` as the element `id` to render into a specific element. Otherwise a `div` element is added to `document.body` and rendered into.
+
+The app is sized to that element's box, so the element must have a size. An empty `div` in normal flow has none, and `width`/`height` in percent resolve against an unsized body.
+
+Example:
+
+export const flutterRootDemo = {
+  activeEditor: 'script',
+  script: {
+    language: 'flutter',
+    content: `import 'package:flutter/material.dart';\n\nvoid main() {\n  runApp(\n    const Center(\n      child: Text('Hello, World!', textDirection: TextDirection.ltr),\n    ),\n  );\n}`,
+  },
+  markup: {
+    language: 'html',
+    content: `<h1>Custom Root Element</h1>
+<div id="livecodes-app" style="width: 300px; height: 240px; border: 1px solid #888; margin: auto"></div>
+`,
+  },
+};
+
+<LiveCodes config={flutterRootDemo} height="80vh"></LiveCodes>
+
+## Language Info
+
+### Name
+
+`flutter`
+
+### Extensions
+
+`flutter`
+
+### Editor
+
+`script`
+
+## Compiler
+
+The Dart team's client-side toolchain (DDC), using the [`dartpad`](https://pub.dev/packages/dartpad) package and the [CanvasKit](https://pub.dev/packages/canvas_kit) renderer.
+
+### Version
+
+DartPad SDK 0.0.9
+
+## Code Formatting
+
+Dart's official formatter (the [`dart_style`](https://pub.dev/packages/dart_style) package behind `dart format`).
+
+## Starter Template
+
+https://livecodes.io/?template=flutter
+
+## Links
+
+- [Flutter official website](https://flutter.dev/)
+- [Flutter documentation](https://docs.flutter.dev/)
+- [Introduction to widgets](https://docs.flutter.dev/ui)
+- [@live-codes/dart-wasm](https://www.npmjs.com/package/@live-codes/dart-wasm)
+- [Dart](./dart.html.md) in LiveCodes

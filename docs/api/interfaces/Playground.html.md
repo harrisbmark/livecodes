@@ -42,7 +42,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1605](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1605)
+[src/sdk/models.ts:1805](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1805)
 
 ***
 
@@ -70,7 +70,7 @@ See [docs](https://livecodes.io/docs/sdk/js-ts#exec) for details.
 
 #### Defined in
 
-[src/sdk/models.ts:1588](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1588)
+[src/sdk/models.ts:1788](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1788)
 
 ***
 
@@ -108,7 +108,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1421](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1421)
+[src/sdk/models.ts:1621](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1621)
 
 ***
 
@@ -146,7 +146,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1499](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1499)
+[src/sdk/models.ts:1699](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1699)
 
 ***
 
@@ -183,7 +183,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1454](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1454)
+[src/sdk/models.ts:1654](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1654)
 
 ***
 
@@ -221,7 +221,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1438](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1438)
+[src/sdk/models.ts:1638](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1638)
 
 ***
 
@@ -242,7 +242,7 @@ If the playground was not loaded, calling any other method will load the playgro
 
 #### Defined in
 
-[src/sdk/models.ts:1624](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1624)
+[src/sdk/models.ts:1824](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1824)
 
 ***
 
@@ -278,7 +278,7 @@ Use [`watch`](https://livecodes.io/docs/sdk/js-ts#watch) method instead.
 
 #### Defined in
 
-[src/sdk/models.ts:1536](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1536)
+[src/sdk/models.ts:1736](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1736)
 
 ***
 
@@ -309,7 +309,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1404](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1404)
+[src/sdk/models.ts:1604](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1604)
 
 ***
 
@@ -343,7 +343,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1529](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1529)
+[src/sdk/models.ts:1729](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1729)
 
 ***
 
@@ -389,7 +389,7 @@ createPlayground("#container").then(async (playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1478](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1478)
+[src/sdk/models.ts:1678](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1678)
 
 ***
 
@@ -436,18 +436,18 @@ await playground.show("console", { full: true });
 
 #### Defined in
 
-[src/sdk/models.ts:1513](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1513)
+[src/sdk/models.ts:1713](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1713)
 
 ***
 
 ### watch
 
-> **watch**: [`WatchLoad`](../internal/type-aliases/WatchLoad.md) & [`WatchReady`](../internal/type-aliases/WatchReady.md) & [`WatchCode`](../internal/type-aliases/WatchCode.md) & [`WatchConsole`](../internal/type-aliases/WatchConsole.md) & [`WatchTests`](../internal/type-aliases/WatchTests.md) & [`WatchDestroy`](../internal/type-aliases/WatchDestroy.md)
+> **watch**: [`WatchLoad`](../internal/type-aliases/WatchLoad.md) & [`WatchReady`](../internal/type-aliases/WatchReady.md) & [`WatchCode`](../internal/type-aliases/WatchCode.md) & [`WatchRun`](../internal/type-aliases/WatchRun.md) & [`WatchConsole`](../internal/type-aliases/WatchConsole.md) & [`WatchTests`](../internal/type-aliases/WatchTests.md) & [`WatchDestroy`](../internal/type-aliases/WatchDestroy.md)
 
 Allows to watch for various playground events.
 It takes 2 arguments: event name and a callback function that will be called on every event.
 
-event name can be one of: `"load" | "ready" | "code" | "console" | "tests" | "destroy"`
+event name can be one of: `"load" | "ready" | "code" | "run" | "console" | "tests" | "destroy"`
 
 In some events, the callback function will be called with an object that supplies relevant data to the callback function (e.g. code, console output, test results).
 
@@ -494,4 +494,4 @@ createPlayground("#container").then((playground) => {
 
 #### Defined in
 
-[src/sdk/models.ts:1581](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1581)
+[src/sdk/models.ts:1781](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1781)

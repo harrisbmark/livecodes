@@ -4,12 +4,6 @@
 
 Fennel code is compiled to Lua, which then runs in the browser using [Fengari](https://fengari.io/). See documentation for Lua language support in LiveCodes [here](./lua.html.md).
 
-:::info Note
-
-Lisp language family supported in LiveCodes includes [Common Lisp](./commonlisp.html.md), [Scheme](./scheme.html.md), [ClojureScript](./clojurescript.html.md) and [Fennel](./fennel.html.md).
-
-:::
-
 ## Usage
 
 JavaScript interoperability and DOM access is achieved using [`"js"` module](https://github.com/fengari-lua/fengari-interop).

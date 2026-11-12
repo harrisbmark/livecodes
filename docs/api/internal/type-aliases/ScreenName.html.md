@@ -6,4 +6,4 @@ Screen names in the app.
 
 ## Defined in
 
-[src/sdk/models.ts:435](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L435)
+[src/sdk/models.ts:604](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L604)

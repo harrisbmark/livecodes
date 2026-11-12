@@ -18,7 +18,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[src/sdk/models.ts:1124](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1124)
+[src/sdk/models.ts:1319](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1319)
 
 ***
 
@@ -30,7 +30,7 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 #### Defined in
 
-[src/sdk/models.ts:1171](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1171)
+[src/sdk/models.ts:1366](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1366)
 
 ***
 
@@ -40,9 +40,25 @@ Defaults to the last used editor for user, otherwise `"markup"`
 
 Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) for the current project.
 
+#### ada
+
+> **ada**: `any`
+
+#### ada-wasm
+
+> **ada-wasm**: `any`
+
+#### adb
+
+> **adb**: `any`
+
 #### adoc
 
 > **adoc**: `any`
+
+#### ads
+
+> **ads**: `any`
 
 #### app.svelte
 
@@ -72,6 +88,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **asciidoc**: `any`
 
+#### asm
+
+> **asm**: `any`
+
+#### asm-wasm
+
+> **asm-wasm**: `any`
+
+#### assembly
+
+> **assembly**: `any`
+
+#### assembly-wasm
+
+> **assembly-wasm**: `any`
+
 #### assemblyscript
 
 > **assemblyscript**: `any`
@@ -100,6 +132,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **Binary**: `any`
 
+#### blazor
+
+> **blazor**: `any`
+
+#### blazor-wasm
+
+> **blazor-wasm**: `any`
+
 #### blockly
 
 > **blockly**: `any`
@@ -116,9 +156,21 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **C**: `any`
 
+#### c-wasm
+
+> **c-wasm**: `any`
+
 #### c++
 
 > **c++**: `any`
+
+#### cbl
+
+> **cbl**: `any`
+
+#### cc
+
+> **cc**: `any`
 
 #### civet
 
@@ -128,9 +180,37 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **clang**: `any`
 
+#### clang-c
+
+> **clang-c**: `any`
+
+#### clang-cpp
+
+> **clang-cpp**: `any`
+
+#### clang-objc
+
+> **clang-objc**: `any`
+
+#### clang-objcpp
+
+> **clang-objcpp**: `any`
+
+#### clang.c
+
+> **c**: `any`
+
 #### clang.cpp
 
 > **cpp**: `any`
+
+#### clang.m
+
+> **m**: `any`
+
+#### clang.mm
+
+> **mm**: `any`
 
 #### clio
 
@@ -148,6 +228,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cljs**: `any`
 
+#### cljs-cherry
+
+> **cljs-cherry**: `any`
+
+#### cljs-selfhosted
+
+> **cljs-selfhosted**: `any`
+
 #### clojure
 
 > **clojure**: `any`
@@ -155,6 +243,26 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### clojurescript
 
 > **clojurescript**: `any`
+
+#### clojurescript-cherry
+
+> **clojurescript-cherry**: `any`
+
+#### clojurescript-selfhosted
+
+> **clojurescript-selfhosted**: `any`
+
+#### cob
+
+> **cob**: `any`
+
+#### cobol
+
+> **cobol**: `any`
+
+#### cobol-wasm
+
+> **cobol-wasm**: `any`
 
 #### coffee
 
@@ -196,6 +304,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cppwasm**: `any`
 
+#### cpy
+
+> **cpy**: `any`
+
+#### cr
+
+> **cr**: `any`
+
+#### crystal
+
+> **crystal**: `any`
+
+#### crystal-wasm
+
+> **crystal-wasm**: `any`
+
 #### cs
 
 > **cs**: `any`
@@ -232,9 +356,29 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cxx**: `any`
 
+#### d
+
+> **d**: `any`
+
+#### d-wasm
+
+> **d-wasm**: `any`
+
+#### dart
+
+> **dart**: `any`
+
+#### dartlang
+
+> **dartlang**: `any`
+
 #### defaultCDN?
 
 > `optional` **defaultCDN**: [`CDN`](../type-aliases/CDN.md)
+
+#### di
+
+> **di**: `any`
 
 #### diagram
 
@@ -244,9 +388,25 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **diagrams**: `any`
 
+#### dlang
+
+> **dlang**: `any`
+
+#### dmd
+
+> **dmd**: `any`
+
 #### dot
 
 > **dot**: `any`
+
+#### duckdb
+
+> **duckdb**: `any`
+
+#### duckdb.sql
+
+> **sql**: `any`
 
 #### dzn
 
@@ -260,6 +420,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **ejs**: `any`
 
+#### elm
+
+> **elm**: `any`
+
 #### es
 
 > **es**: `any`
@@ -267,6 +431,30 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### eta
 
 > **eta**: `any`
+
+#### f
+
+> **f**: `any`
+
+#### f03
+
+> **f03**: `any`
+
+#### f08
+
+> **f08**: `any`
+
+#### f90
+
+> **f90**: `any`
+
+#### f95
+
+> **f95**: `any`
+
+#### fanak
+
+> **fanak**: `any`
 
 #### fennel
 
@@ -276,13 +464,61 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **flow**: `any`
 
+#### flutter
+
+> **flutter**: `any`
+
+#### fnk
+
+> **fnk**: `any`
+
 #### fnl
 
 > **fnl**: `any`
 
+#### for
+
+> **for**: `any`
+
+#### fortran
+
+> **fortran**: `any`
+
+#### fortran-wasm
+
+> **fortran-wasm**: `any`
+
+#### fs
+
+> **fs**: `any`
+
+#### fs-wasm
+
+> **fs-wasm**: `any`
+
+#### fsharp
+
+> **fsharp**: `any`
+
+#### fsharp-wasm
+
+> **fsharp-wasm**: `any`
+
+#### fsx
+
+> **fsx**: `any`
+
+#### ftn
+
+> **ftn**: `any`
+
 #### gleam
 
 > **gleam**: `any`
+
+#### gnucobol
+
+> **gnucobol**: `any`
 
 #### go
 
@@ -308,6 +544,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **h**: `any`
 
+#### hac
+
+> **hac**: `any`
+
 #### haml
 
 > **haml**: `any`
@@ -316,6 +556,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **handlebars**: `any`
 
+#### haskell
+
+> **haskell**: `any`
+
+#### haskell-wasm
+
+> **haskell-wasm**: `any`
+
 #### hbs
 
 > **hbs**: `any`
@@ -323,6 +571,18 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### hpp
 
 > **hpp**: `any`
+
+#### hs
+
+> **hs**: `any`
+
+#### hs-wasm
+
+> **hs-wasm**: `any`
+
+#### hswasm
+
+> **hswasm**: `any`
 
 #### htm
 
@@ -352,9 +612,29 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **jade**: `any`
 
+#### janet
+
+> **janet**: `any`
+
+#### janet-wasm
+
+> **janet-wasm**: `any`
+
 #### java
 
 > **java**: `any`
+
+#### java-8
+
+> **java-8**: `any`
+
+#### java-wasm
+
+> **java-wasm**: `any`
+
+#### java8
+
+> **java8**: `any`
 
 #### javascript
 
@@ -372,6 +652,18 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **js**: `any`
 
+#### js.ml
+
+> **ml**: `any`
+
+#### js.nim
+
+> **nim**: `any`
+
+#### js.ocaml
+
+> **ocaml**: `any`
+
 #### json
 
 > **json**: `any`
@@ -387,6 +679,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### less
 
 > **less**: `any`
+
+#### lfortran
+
+> **lfortran**: `any`
+
+#### lhs
+
+> **lhs**: `any`
 
 #### lightningcss
 
@@ -423,6 +723,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### luawasm
 
 > **luawasm**: `any`
+
+#### m
+
+> **m**: `any`
 
 #### malina
 
@@ -476,6 +780,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **mli**: `any`
 
+#### mm
+
+> **mm**: `any`
+
 #### mts
 
 > **mts**: `any`
@@ -488,6 +796,34 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **mzn**: `any`
 
+#### nasm
+
+> **nasm**: `any`
+
+#### nim
+
+> **nim**: `any`
+
+#### nim-js
+
+> **nim-js**: `any`
+
+#### nim-wasm
+
+> **nim-wasm**: `any`
+
+#### nimble
+
+> **nimble**: `any`
+
+#### nims
+
+> **nims**: `any`
+
+#### nimwasm
+
+> **nimwasm**: `any`
+
 #### njk
 
 > **njk**: `any`
@@ -496,9 +832,61 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **nunjucks**: `any`
 
+#### objc
+
+> **objc**: `any`
+
+#### objc-wasm
+
+> **objc-wasm**: `any`
+
+#### objc++
+
+> **objc++**: `any`
+
+#### objcpp
+
+> **objcpp**: `any`
+
+#### objcpp-wasm
+
+> **objcpp-wasm**: `any`
+
+#### objective-c
+
+> **objective-c**: `any`
+
+#### objective-c++
+
+> **objective-c++**: `any`
+
 #### ocaml
 
 > **ocaml**: `any`
+
+#### ocaml-js
+
+> **ocaml-js**: `any`
+
+#### odin
+
+> **odin**: `any`
+
+#### odin-wasm
+
+> **odin-wasm**: `any`
+
+#### pas
+
+> **pas**: `any`
+
+#### pas2js
+
+> **pas2js**: `any`
+
+#### pascal
+
+> **pascal**: `any`
 
 #### perl
 
@@ -584,6 +972,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **sql**: `any`
 
+#### pp
+
+> **pp**: `any`
+
 #### prolog
 
 > **prolog**: `any`
@@ -639,6 +1031,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### r-wasm
 
 > **r-wasm**: `any`
+
+#### razor
+
+> **razor**: `any`
+
+#### razor-wasm
+
+> **razor-wasm**: `any`
 
 #### rb
 
@@ -700,6 +1100,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rescript**: `any`
 
+#### rescript-ocaml
+
+> **rescript-ocaml**: `any`
+
 #### resi
 
 > **resi**: `any`
@@ -732,6 +1136,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rlang**: `any`
 
+#### rs
+
+> **rs**: `any`
+
+#### rs-wasm
+
+> **rs-wasm**: `any`
+
 #### rstats
 
 > **rstats**: `any`
@@ -756,9 +1168,25 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rubywasm**: `any`
 
+#### rust
+
+> **rust**: `any`
+
+#### rust-wasm
+
+> **rust-wasm**: `any`
+
 #### sass
 
 > **sass**: `any`
+
+#### scala
+
+> **scala**: `any`
+
+#### scala-wasm
+
+> **scala-wasm**: `any`
 
 #### scheme
 
@@ -770,7 +1198,7 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 #### scriptType?
 
-> `optional` **scriptType**: `""` \| `"module"` \| `"application/javascript"` \| `"application/ecmascript"` \| `"text/javascript"` \| `"text/ecmascript"` \| `"text/liquid"` \| `"text/python"` \| `"text/r"` \| `"text/ruby-wasm"` \| `"text/x-uniter-php"` \| `"text/php-wasm"` \| `"text/cpp"` \| `"text/java"` \| `"text/csharp-wasm"` \| `"text/perl"` \| `"text/julia"` \| `"text/biwascheme"` \| `"text/commonlisp"` \| `"text/tcl"` \| `"text/prolog"` \| `"text/minizinc"` \| `"text/go-wasm"` \| `"application/json"` \| `"application/lua"` \| `"text/fennel"` \| `"application/wasm-uint8"`
+> `optional` **scriptType**: `""` \| `"module"` \| `"application/javascript"` \| `"application/ecmascript"` \| `"text/javascript"` \| `"text/ecmascript"` \| `"text/liquid"` \| `"text/python"` \| `"text/r"` \| `"text/ruby-wasm"` \| `"text/scala-wasm"` \| `"text/x-uniter-php"` \| `"text/php-wasm"` \| `"text/c-wasm"` \| `"text/cpp"` \| `"text/cpp-wasm"` \| `"text/objc-wasm"` \| `"text/objcpp-wasm"` \| `"text/nim-wasm"` \| `"text/java"` \| `"text/csharp-wasm"` \| `"text/razor"` \| `"text/fanak"` \| `"text/vb-wasm"` \| `"text/perl"` \| `"text/julia"` \| `"text/biwascheme"` \| `"text/commonlisp"` \| `"text/tcl"` \| `"text/prolog"` \| `"text/haskell"` \| `"text/haskell-wasm"` \| `"text/minizinc"` \| `"text/go-wasm"` \| `"text/zig-wasm"` \| `"text/v-wasm"` \| `"application/json"` \| `"application/lua"` \| `"text/fennel"` \| `"application/wasm-uint8"`
 
 #### scss
 
@@ -836,6 +1264,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **swift**: `any`
 
+#### swift-wasm
+
+> **swift-wasm**: `any`
+
 #### tailwindcss
 
 > **tailwindcss**: `any`
@@ -892,9 +1324,37 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **unocss**: `any`
 
+#### v
+
+> **v**: `any`
+
+#### v-wasm
+
+> **v-wasm**: `any`
+
+#### vb
+
+> **vb**: `any`
+
+#### vb-wasm
+
+> **vb-wasm**: `any`
+
+#### vbnet
+
+> **vbnet**: `any`
+
 #### vento
 
 > **vento**: `any`
+
+#### vlang
+
+> **vlang**: `any`
+
+#### vsh
+
+> **vsh**: `any`
 
 #### vto
 
@@ -920,6 +1380,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **wasm**: `any`
 
+#### wasm.ada
+
+> **ada**: `any`
+
+#### wasm.asm
+
+> **asm**: `any`
+
+#### wasm.c
+
+> **c**: `any`
+
+#### wasm.cobol
+
+> **cobol**: `any`
+
 #### wasm.cpp
 
 > **cpp**: `any`
@@ -928,13 +1404,41 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cs**: `any`
 
+#### wasm.fs
+
+> **fs**: `any`
+
+#### wasm.fsx
+
+> **fsx**: `any`
+
 #### wasm.go
 
 > **go**: `any`
 
+#### wasm.hs
+
+> **hs**: `any`
+
+#### wasm.janet
+
+> **janet**: `any`
+
 #### wasm.lua
 
 > **lua**: `any`
+
+#### wasm.m
+
+> **m**: `any`
+
+#### wasm.mm
+
+> **mm**: `any`
+
+#### wasm.nim
+
+> **nim**: `any`
 
 #### wasm.php
 
@@ -944,9 +1448,33 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **py**: `any`
 
+#### wasm.razor
+
+> **razor**: `any`
+
 #### wasm.rb
 
 > **rb**: `any`
+
+#### wasm.rs
+
+> **rs**: `any`
+
+#### wasm.scala
+
+> **scala**: `any`
+
+#### wasm.swift
+
+> **swift**: `any`
+
+#### wasm.v
+
+> **v**: `any`
+
+#### wasm.vb
+
+> **vb**: `any`
 
 #### wast
 
@@ -964,6 +1492,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **windicss**: `any`
 
+#### x86
+
+> **x86**: `any`
+
+#### x86-64
+
+> **x86-64**: `any`
+
 #### xht
 
 > **xht**: `any`
@@ -972,9 +1508,17 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **xml**: `any`
 
+#### zig
+
+> **zig**: `any`
+
+#### zig-wasm
+
+> **zig-wasm**: `any`
+
 #### Defined in
 
-[src/sdk/models.ts:1183](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1183)
+[src/sdk/models.ts:1378](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1378)
 
 ***
 
@@ -993,7 +1537,7 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 
 #### Defined in
 
-[src/sdk/models.ts:1094](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1094)
+[src/sdk/models.ts:1289](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1289)
 
 ***
 
@@ -1011,7 +1555,7 @@ Content added to the [result page](https://livecodes.io/docs/features/result) `<
 
 #### Defined in
 
-[src/sdk/models.ts:1100](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1100)
+[src/sdk/models.ts:1295](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1295)
 
 ***
 
@@ -1031,7 +1575,7 @@ It can be an object or a string.
 
 #### Defined in
 
-[src/sdk/models.ts:1109](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1109)
+[src/sdk/models.ts:1304](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1304)
 
 ***
 
@@ -1068,13 +1612,13 @@ and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolut
 
 #### Defined in
 
-[src/sdk/models.ts:1209](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1209)
+[src/sdk/models.ts:1404](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1404)
 
 ***
 
 ### languages
 
-> **languages**: `undefined` \| (`"html"` \| `"htm"` \| `"markdown"` \| `"md"` \| `"mdown"` \| `"mkdn"` \| `"mdx"` \| `"astro"` \| `"pug"` \| `"jade"` \| `"haml"` \| `"asciidoc"` \| `"adoc"` \| `"asc"` \| `"mustache"` \| `"handlebars"` \| `"hbs"` \| `"ejs"` \| `"eta"` \| `"nunjucks"` \| `"njk"` \| `"liquid"` \| `"liquidjs"` \| `"dot"` \| `"twig"` \| `"vento"` \| `"vto"` \| `"art-template"` \| `"art"` \| `"jinja"` \| `"bbcode"` \| `"bb"` \| `"mjml"` \| `"diagrams"` \| `"diagram"` \| `"graph"` \| `"plt"` \| `"richtext"` \| `"rte"` \| `"rich"` \| `"rte.html"` \| `"css"` \| `"scss"` \| `"sass"` \| `"less"` \| `"stylus"` \| `"styl"` \| `"stylis"` \| `"postcss"` \| `"javascript"` \| `"js"` \| `"mjs"` \| `"json"` \| `"babel"` \| `"es"` \| `"sucrase"` \| `"typescript"` \| `"flow"` \| `"ts"` \| `"mts"` \| `"jsx"` \| `"tsx"` \| `"react"` \| `"react-jsx"` \| `"react.jsx"` \| `"react-tsx"` \| `"react.tsx"` \| `"react-native"` \| `"react-native.jsx"` \| `"react-native-tsx"` \| `"react-native.tsx"` \| `"vue"` \| `"vue3"` \| `"vue2"` \| `"vue-app"` \| `"app.vue"` \| `"svelte"` \| `"svelte-app"` \| `"app.svelte"` \| `"stencil"` \| `"stencil.tsx"` \| `"solid"` \| `"solid.jsx"` \| `"solid.tsx"` \| `"riot"` \| `"riotjs"` \| `"malina"` \| `"malinajs"` \| `"ripple"` \| `"ripplejs"` \| `"xht"` \| `"coffeescript"` \| `"coffee"` \| `"livescript"` \| `"ls"` \| `"civet"` \| `"clio"` \| `"imba"` \| `"assemblyscript"` \| `"as"` \| `"python"` \| `"py"` \| `"pyodide"` \| `"python-wasm"` \| `"py-wasm"` \| `"pythonwasm"` \| `"pywasm"` \| `"py3"` \| `"wasm.py"` \| `"r"` \| `"rlang"` \| `"rstats"` \| `"r-wasm"` \| `"ruby"` \| `"rb"` \| `"ruby-wasm"` \| `"wasm.rb"` \| `"rubywasm"` \| `"go"` \| `"golang"` \| `"go-wasm"` \| `"wasm.go"` \| `"gowasm"` \| `"php"` \| `"php-wasm"` \| `"phpwasm"` \| `"wasm.php"` \| `"cpp"` \| `"c"` \| `"C"` \| `"cp"` \| `"cxx"` \| `"c++"` \| `"cppm"` \| `"ixx"` \| `"ii"` \| `"hpp"` \| `"h"` \| `"cpp-wasm"` \| `"cppwasm"` \| `"cwasm"` \| `"wasm.cpp"` \| `"clang"` \| `"clang.cpp"` \| `"java"` \| `"csharp"` \| `"csharp-wasm"` \| `"cs"` \| `"cs-wasm"` \| `"wasm.cs"` \| `"perl"` \| `"pl"` \| `"pm"` \| `"lua"` \| `"lua-wasm"` \| `"luawasm"` \| `"wasm.lua"` \| `"teal"` \| `"tl"` \| `"fennel"` \| `"fnl"` \| `"julia"` \| `"jl"` \| `"scheme"` \| `"scm"` \| `"commonlisp"` \| `"common-lisp"` \| `"lisp"` \| `"clojurescript"` \| `"clojure"` \| `"cljs"` \| `"clj"` \| `"cljc"` \| `"edn"` \| `"gleam"` \| `"swift"` \| `"rescript"` \| `"res"` \| `"resi"` \| `"reason"` \| `"re"` \| `"rei"` \| `"ocaml"` \| `"ml"` \| `"mli"` \| `"tcl"` \| `"wat"` \| `"wast"` \| `"webassembly"` \| `"wasm"` \| `"Binary"` \| `"sql"` \| `"sqlite"` \| `"sqlite3"` \| `"pg.sql"` \| `"pgsql.sql"` \| `"pgsql"` \| `"pg"` \| `"pglite"` \| `"pglite.sql"` \| `"postgresql"` \| `"postgres"` \| `"postgre.sql"` \| `"postgresql.sql"` \| `"prolog.pl"` \| `"prolog"` \| `"minizinc"` \| `"mzn"` \| `"dzn"` \| `"blockly"` \| `"blockly.xml"` \| `"xml"` \| `"pintora"` \| `"postcssImportUrl"` \| `"tailwindcss"` \| `"windicss"` \| `"unocss"` \| `"tokencss"` \| `"lightningcss"` \| `"autoprefixer"` \| `"postcssPresetEnv"` \| `"cssmodules"` \| `"purgecss"` \| `"cssnano"`)[]
+> **languages**: `undefined` \| (`"html"` \| `"htm"` \| `"markdown"` \| `"md"` \| `"mdown"` \| `"mkdn"` \| `"mdx"` \| `"astro"` \| `"pug"` \| `"jade"` \| `"haml"` \| `"asciidoc"` \| `"adoc"` \| `"asc"` \| `"mustache"` \| `"handlebars"` \| `"hbs"` \| `"ejs"` \| `"eta"` \| `"nunjucks"` \| `"njk"` \| `"liquid"` \| `"liquidjs"` \| `"dot"` \| `"twig"` \| `"vento"` \| `"vto"` \| `"art-template"` \| `"art"` \| `"jinja"` \| `"bbcode"` \| `"bb"` \| `"mjml"` \| `"diagrams"` \| `"diagram"` \| `"graph"` \| `"plt"` \| `"richtext"` \| `"rte"` \| `"rich"` \| `"rte.html"` \| `"css"` \| `"scss"` \| `"sass"` \| `"less"` \| `"stylus"` \| `"styl"` \| `"stylis"` \| `"postcss"` \| `"javascript"` \| `"js"` \| `"mjs"` \| `"json"` \| `"babel"` \| `"es"` \| `"sucrase"` \| `"typescript"` \| `"flow"` \| `"ts"` \| `"mts"` \| `"jsx"` \| `"tsx"` \| `"react"` \| `"react-jsx"` \| `"react.jsx"` \| `"react-tsx"` \| `"react.tsx"` \| `"react-native"` \| `"react-native.jsx"` \| `"react-native-tsx"` \| `"react-native.tsx"` \| `"vue"` \| `"vue3"` \| `"vue2"` \| `"vue-app"` \| `"app.vue"` \| `"svelte"` \| `"svelte-app"` \| `"app.svelte"` \| `"stencil"` \| `"stencil.tsx"` \| `"solid"` \| `"solid.jsx"` \| `"solid.tsx"` \| `"riot"` \| `"riotjs"` \| `"malina"` \| `"malinajs"` \| `"ripple"` \| `"ripplejs"` \| `"xht"` \| `"coffeescript"` \| `"coffee"` \| `"livescript"` \| `"ls"` \| `"civet"` \| `"clio"` \| `"imba"` \| `"elm"` \| `"assemblyscript"` \| `"as"` \| `"python"` \| `"py"` \| `"pyodide"` \| `"python-wasm"` \| `"py-wasm"` \| `"pythonwasm"` \| `"pywasm"` \| `"py3"` \| `"wasm.py"` \| `"r"` \| `"rlang"` \| `"rstats"` \| `"r-wasm"` \| `"ruby"` \| `"rb"` \| `"ruby-wasm"` \| `"wasm.rb"` \| `"rubywasm"` \| `"go"` \| `"golang"` \| `"go-wasm"` \| `"wasm.go"` \| `"gowasm"` \| `"php"` \| `"php-wasm"` \| `"phpwasm"` \| `"wasm.php"` \| `"cpp"` \| `"cc"` \| `"c"` \| `"C"` \| `"cp"` \| `"cxx"` \| `"c++"` \| `"cppm"` \| `"ixx"` \| `"ii"` \| `"hpp"` \| `"h"` \| `"cwasm"` \| `"c-wasm"` \| `"wasm.c"` \| `"clang.c"` \| `"clang-c"` \| `"cobol"` \| `"cob"` \| `"cbl"` \| `"cpy"` \| `"gnucobol"` \| `"cobol-wasm"` \| `"wasm.cobol"` \| `"fortran"` \| `"f90"` \| `"f95"` \| `"f03"` \| `"f08"` \| `"f"` \| `"for"` \| `"ftn"` \| `"fortran-wasm"` \| `"lfortran"` \| `"d"` \| `"di"` \| `"dlang"` \| `"dmd"` \| `"d-wasm"` \| `"dart"` \| `"dartlang"` \| `"flutter"` \| `"v"` \| `"vlang"` \| `"v-wasm"` \| `"wasm.v"` \| `"vsh"` \| `"cpp-wasm"` \| `"cppwasm"` \| `"wasm.cpp"` \| `"clang"` \| `"clang.cpp"` \| `"clang-cpp"` \| `"objc"` \| `"objc-wasm"` \| `"objective-c"` \| `"wasm.m"` \| `"clang.m"` \| `"clang-objc"` \| `"m"` \| `"objcpp"` \| `"objcpp-wasm"` \| `"objc++"` \| `"objective-c++"` \| `"wasm.mm"` \| `"clang.mm"` \| `"clang-objcpp"` \| `"mm"` \| `"java"` \| `"java-wasm"` \| `"java-8"` \| `"java8"` \| `"csharp"` \| `"csharp-wasm"` \| `"cs"` \| `"cs-wasm"` \| `"wasm.cs"` \| `"blazor"` \| `"blazor-wasm"` \| `"razor"` \| `"razor-wasm"` \| `"wasm.razor"` \| `"vb"` \| `"vb-wasm"` \| `"vbnet"` \| `"wasm.vb"` \| `"fsharp"` \| `"fs"` \| `"fsx"` \| `"fsharp-wasm"` \| `"fs-wasm"` \| `"wasm.fs"` \| `"wasm.fsx"` \| `"fanak"` \| `"fnk"` \| `"rust"` \| `"rs"` \| `"rust-wasm"` \| `"rs-wasm"` \| `"wasm.rs"` \| `"scala"` \| `"scala-wasm"` \| `"wasm.scala"` \| `"pascal"` \| `"pas"` \| `"pp"` \| `"pas2js"` \| `"perl"` \| `"pl"` \| `"pm"` \| `"lua"` \| `"lua-wasm"` \| `"luawasm"` \| `"wasm.lua"` \| `"teal"` \| `"tl"` \| `"fennel"` \| `"fnl"` \| `"julia"` \| `"jl"` \| `"haskell"` \| `"hs"` \| `"lhs"` \| `"haskell-wasm"` \| `"hs-wasm"` \| `"wasm.hs"` \| `"hswasm"` \| `"scheme"` \| `"scm"` \| `"commonlisp"` \| `"common-lisp"` \| `"lisp"` \| `"clojurescript"` \| `"clojurescript-cherry"` \| `"cljs-cherry"` \| `"clojurescript-selfhosted"` \| `"cljs-selfhosted"` \| `"clojure"` \| `"cljs"` \| `"clj"` \| `"cljc"` \| `"edn"` \| `"gleam"` \| `"swift"` \| `"swift-wasm"` \| `"wasm.swift"` \| `"ada"` \| `"ada-wasm"` \| `"adb"` \| `"ads"` \| `"hac"` \| `"wasm.ada"` \| `"zig"` \| `"zig-wasm"` \| `"rescript"` \| `"res"` \| `"resi"` \| `"reason"` \| `"re"` \| `"rei"` \| `"ocaml"` \| `"ml"` \| `"mli"` \| `"ocaml-js"` \| `"js.ocaml"` \| `"js.ml"` \| `"rescript-ocaml"` \| `"cr"` \| `"crystal"` \| `"crystal-wasm"` \| `"odin"` \| `"odin-wasm"` \| `"nim"` \| `"nims"` \| `"nimble"` \| `"nim-wasm"` \| `"nimwasm"` \| `"wasm.nim"` \| `"nim-js"` \| `"js.nim"` \| `"janet"` \| `"janet-wasm"` \| `"wasm.janet"` \| `"tcl"` \| `"wat"` \| `"wast"` \| `"webassembly"` \| `"wasm"` \| `"Binary"` \| `"assembly-wasm"` \| `"assembly"` \| `"asm"` \| `"asm-wasm"` \| `"x86"` \| `"x86-64"` \| `"nasm"` \| `"wasm.asm"` \| `"sql"` \| `"sqlite"` \| `"sqlite3"` \| `"pg.sql"` \| `"pgsql.sql"` \| `"pgsql"` \| `"pg"` \| `"pglite"` \| `"pglite.sql"` \| `"postgresql"` \| `"postgres"` \| `"postgre.sql"` \| `"postgresql.sql"` \| `"duckdb"` \| `"duckdb.sql"` \| `"prolog.pl"` \| `"prolog"` \| `"minizinc"` \| `"mzn"` \| `"dzn"` \| `"blockly"` \| `"blockly.xml"` \| `"xml"` \| `"pintora"` \| `"postcssImportUrl"` \| `"tailwindcss"` \| `"windicss"` \| `"unocss"` \| `"tokencss"` \| `"lightningcss"` \| `"autoprefixer"` \| `"postcssPresetEnv"` \| `"cssmodules"` \| `"purgecss"` \| `"cssnano"`)[]
 
 List of enabled languages.
 
@@ -1082,7 +1626,7 @@ Defaults to all supported languages in full app and only current editor language
 
 #### Defined in
 
-[src/sdk/models.ts:1131](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1131)
+[src/sdk/models.ts:1326](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1326)
 
 ***
 
@@ -1206,7 +1750,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[src/sdk/models.ts:1139](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1139)
+[src/sdk/models.ts:1334](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1334)
 
 ***
 
@@ -1220,7 +1764,7 @@ For the list of available processors, see [Processor](https://livecodes.io/docs/
 
 #### Defined in
 
-[src/sdk/models.ts:1178](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1178)
+[src/sdk/models.ts:1373](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1373)
 
 ***
 
@@ -1344,7 +1888,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[src/sdk/models.ts:1155](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1155)
+[src/sdk/models.ts:1350](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1350)
 
 ***
 
@@ -1356,7 +1900,7 @@ List of URLs for [external scripts](https://livecodes.io/docs/features/external-
 
 #### Defined in
 
-[src/sdk/models.ts:1165](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1165)
+[src/sdk/models.ts:1360](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1360)
 
 ***
 
@@ -1480,7 +2024,7 @@ overriding the default title set to the language name
 
 #### Defined in
 
-[src/sdk/models.ts:1147](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1147)
+[src/sdk/models.ts:1342](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1342)
 
 ***
 
@@ -1492,7 +2036,7 @@ List of URLs for [external stylesheets](https://livecodes.io/docs/features/exter
 
 #### Defined in
 
-[src/sdk/models.ts:1160](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1160)
+[src/sdk/models.ts:1355](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1355)
 
 ***
 
@@ -1511,7 +2055,7 @@ Used in [project](https://livecodes.io/docs/features/projects) filter and search
 
 #### Defined in
 
-[src/sdk/models.ts:1116](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1116)
+[src/sdk/models.ts:1311](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1311)
 
 ***
 
@@ -1524,7 +2068,7 @@ and content of [tests](https://livecodes.io/docs/features/tests).
 
 #### Defined in
 
-[src/sdk/models.ts:1245](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1245)
+[src/sdk/models.ts:1440](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1440)
 
 ***
 
@@ -1544,7 +2088,7 @@ Also used in project search.
 
 #### Defined in
 
-[src/sdk/models.ts:1087](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1087)
+[src/sdk/models.ts:1282](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1282)
 
 ***
 
@@ -1582,7 +2126,7 @@ and [Custom Types](https://livecodes.io/docs/features/intellisense#custom-types)
 
 #### Defined in
 
-[src/sdk/models.ts:1239](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1239)
+[src/sdk/models.ts:1434](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1434)
 
 ***
 
@@ -1596,4 +2140,4 @@ Version specified in [exported](https://livecodes.io/docs/features/export) proje
 
 #### Defined in
 
-[src/sdk/models.ts:1252](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1252)
+[src/sdk/models.ts:1447](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1447)

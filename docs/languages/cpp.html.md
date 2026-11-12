@@ -1,3 +1,56 @@
 # C++
 
-TODO...
+[C++](https://isocpp.org/) is a general-purpose programming language with a bias towards systems programming. It supports procedural, object-oriented, and generic programming paradigms.
+
+LiveCodes runs C++ in the browser using [JSCPP](https://github.com/felixhao28/JSCPP), a C++ interpreter written in JavaScript that runs in a Web Worker.
+
+## Usage
+
+### Demo
+
+import LiveCodes from '../../src/components/LiveCodes.tsx';
+
+<LiveCodes template="cpp" height="80vh"></LiveCodes>
+
+### Standard I/O
+
+C++ programs in LiveCodes use `cin` for input and `cout` for output. Input is passed from JavaScript via `livecodes.cpp.run()`, and output is returned as a string.
+
+### JavaScript Interoperability
+
+JavaScript can interact with the C++ runtime using the `livecodes.cpp` global:
+
+- `livecodes.cpp.input` — set this to pass input to the program (read by `cin`)
+- `livecodes.cpp.run(input?)` — execute the C++ program with optional input, returns a promise that resolves to `{ input, output, exitCode, error }`
+- `livecodes.cpp.loaded` — a promise that resolves when the runtime is ready
+
+## Language Info
+
+### Name
+
+`cpp`
+
+### Extensions
+
+`.cpp`, `.cp`, `.cxx`, `.c++`, `.cppm`, `.ixx`, `.ii`, `.hpp`
+
+### Editor
+
+`script`
+
+## Compiler
+
+[JSCPP](https://github.com/felixhao28/JSCPP) (C++ interpreter)
+
+## Code Formatting
+
+Using [@wasm-fmt/clang-format](https://github.com/wasm-fmt/clang-format), applying [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
+
+## Starter Template
+
+https://livecodes.io/?template=cpp
+
+## Links
+
+- [C++ Reference](https://en.cppreference.com/)
+- [JSCPP](https://github.com/felixhao28/JSCPP)

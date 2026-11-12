@@ -4,12 +4,6 @@
 
 In LiveCodes, Common Lisp code runs in the browser using [JSCL](https://github.com/jscl-project/jscl), a Common Lisp to JavaScript compiler.
 
-:::info Note
-
-Lisp language family supported in LiveCodes includes [Common Lisp](./commonlisp.html.md), [Scheme](./scheme.html.md), [ClojureScript](./clojurescript.html.md) and [Fennel](./fennel.html.md).
-
-:::
-
 ## Usage
 
 LiveCodes runs Common Lisp code in the browser. JSCL implements a subset of Common Lisp, but covers enough functionality to write practical code.

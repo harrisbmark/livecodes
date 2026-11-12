@@ -1,0 +1,199 @@
+# Nim
+
+[Nim](https://nim-lang.org/) is a statically typed, compiled systems programming language.
+
+In LiveCodes, Nim runs in the browser using the [Nim compiler](https://nim-lang.org/) compiled to WebAssembly. The `nim` language drives any of Nim's backends, selected with the `target` [custom setting](#custom-settings):
+
+- **`js`** (default) — Nim's JavaScript backend. The emitted program runs in the result page, so it can drive the DOM directly (e.g. through the `dom` and `jsffi` modules).
+- **`c`** and **`cpp`** — Nim's C and C++ backends. The generated source is compiled and run in a worker by the [Clang](https://clang.llvm.org/) toolchain, the same one used for [C (Wasm)](./c-wasm.html.md), and the C/C++ that Nim generated is shown in the compiled code view.
+
+> For Nim's `c` backend as a dedicated language, with standard input, command-line arguments and real exit codes, see [Nim (Wasm)](./nim-wasm.html.md).
+
+## Usage
+
+Demo (JavaScript backend):
+
+import LiveCodes from '../../src/components/LiveCodes.tsx';
+
+export const nimConfig = {
+  activeEditor: 'script',
+  script: {
+    language: 'nim',
+    content: `echo "Hello, World!"`,
+  },
+  mode: 'simple',
+  editor: 'auto',
+  tools: {
+    status: 'full',
+  },
+};
+
+<LiveCodes config={nimConfig}></LiveCodes>
+
+### Choosing a backend
+
+Set `target` in [custom settings](../advanced/custom-settings.html.md):
+
+```json title="Custom Settings"
+{
+  "nim": {
+    "target": "cpp"
+  }
+}
+```
+
+The `c` and `cpp` targets compile and run in a worker, like [C (Wasm)](./c-wasm.html.md), so they have no document. They do have C interop, exact 64-bit integers, `cast`, pointers and `sizeof` — the capabilities the JavaScript backend lacks. Standard input and command-line arguments are not exposed by this language; use [Nim (Wasm)](./nim-wasm.html.md) for those.
+
+With either target, the **compiled** code view shows what Nim emitted: the JavaScript program, or the C/C++ that was handed to Clang.
+
+### External packages
+
+The `nim` language can import a set of Nimble packages from a pinned registry. Nothing is downloaded
+until a program imports one, and then only that package's source files are fetched (from its Git
+repository at a fixed commit), so a program that uses none costs nothing extra:
+
+```nim
+import jsony
+
+type User = object
+  name: string
+  age: int
+
+echo """{"name":"Ada","age":36}""".fromJson(User)
+echo User(name: "Ada", age: 36).toJson
+```
+
+The 41-package registry covers JSON, YAML and TOML (`jsony`, `yaml`, `parsetoml`), parsers (`npeg`), text
+and Unicode (`regex`, `unicodedb`, `graphemes`, `normalize`, `strunicode`, `stew`), maths (`bigints`,
+`vmath`), data structures (`rbtree`, `binaryheap`, `compactdict`), iterator, functional and macro helpers
+(`itertools`, `iterutils`, `optionsutils`, `patty`, `with`, `zero_functional`, `unpack`, `fusion`,
+`macroutils`, `ast_pattern_matching`), colour (`chroma`, `termstyle`), serialization and compression
+(`jstin`, `msgpack4nim`, `zippy`, `pnm`, `nimsvg`), command lines (`cligen`, `argparse`, `docopt`),
+templating (`mustache`), UI (`karax`, `nimquery`), timing (`timeit`) and cryptography (`nimcrypto`).
+
+Some packages only work on one backend: `compactdict`, `mustache`, `zippy`, `msgpack4nim`, `nimsvg`,
+`cligen`, `argparse`, `docopt` and `nimcrypto` need the C/C++ targets (the `wasm` target compiles through
+C, so they work there too), while `karax`, `nimquery` and `strunicode` need the JavaScript target.
+`results` works on both. Other Nimble packages are not available, and packages that need a C library,
+sockets, threads or a subprocess cannot run in the browser.
+
+### Adding a library
+
+The registry above is fixed. `libraries` adds entries to it from [custom settings](../advanced/custom-settings.html.md), without rebuilding anything:
+
+```json title="Custom Settings"
+{
+  "nim": {
+    "libraries": ["https://github.com/nim-lang/checksums"]
+  }
+}
+```
+
+It can then be used in a program:
+
+```nim
+import checksums/sha1
+
+echo $secureHash("Hello World")
+```
+
+Each array item is a public GitHub repository link (optionally `/tree/<ref>`), or an object with `url` and optional `name`, `ref`, `modules`, `requires` and `backends`. Sources that are not in a public repository can be inlined:
+
+```json title="Custom Settings"
+{
+  "nim": {
+    "libraries": {
+      "mylib": {
+        "modules": ["mylib"],
+        "files": {
+          "mylib.nim": "proc hi*(): string = \"hi\"\n"
+        }
+      }
+    }
+  }
+}
+```
+
+A library is resolved when the program runs, and the bundled registry stays available. User libraries are not hash-pinned: they are whatever the repository or the custom settings supply. Only public GitHub repositories are fetched; for private sources, use the package's `libraryFromFiles` API.
+
+Set `"packages": false` in custom settings to turn package imports off. Adding an entry to `libraries` enables the package loader even when `packages` is `false`, and brings the bundled registry with it.
+
+### Communication with the result page
+
+With the default `js` backend, Nim emits one self-sufficient program that runs in the result page. It has a document and a console, so `echo` writes to the console, and the browser modules that ship with the compiler (`dom`, `jsffi`, `jsconsole`, `jscore`, `jsre` and `asyncjs`) are on its search path:
+
+```nim
+import dom
+
+document.title = "Nim in LiveCodes"
+let element = document.createElement("p")
+element.innerText = "Hello from Nim!"
+document.body.appendChild(element)
+```
+
+Example:
+
+<LiveCodes template="nim" params={{ compiled: 'open' }} height="80vh"></LiveCodes>
+
+## Language Info
+
+### Name
+
+`nim`
+
+### Aliases / Extensions
+
+`nim`, `nims`, `nimble`, `nim-js`, `js.nim`
+
+### Editor
+
+`script`
+
+## Compiler
+
+The [Nim compiler](https://nim-lang.org/) (Nim's `js`, `c` or `cpp` backend) compiled to WebAssembly, packaged as [@live-codes/nim-wasm](https://www.npmjs.com/package/@live-codes/nim-wasm). The `c` and `cpp` targets emit one self-contained source string, which the [Clang](https://clang.llvm.org/) toolchain of [@live-codes/clang-wasm](https://www.npmjs.com/package/@live-codes/clang-wasm) compiles and links.
+
+### Version
+
+Nim `v2.2.12`. Clang `v22.1.8` for the `c` and `cpp` targets.
+
+## Custom Settings
+
+The compiler can be configured using [custom settings](../advanced/custom-settings.html.md) added to the property `nim`:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `target` | `"js" \| "c" \| "cpp"` | The Nim backend. Defaults to `js`. |
+| `packages` | `boolean` | Import external packages from the bundled registry. Defaults to `true`. |
+| `libraries` | `string[] \| object` | Public GitHub links or inline library entries added to the bundled registry. See [Adding a library](#adding-a-library). |
+
+```json title="Custom Settings"
+{
+  "nim": {
+    "target": "c"
+  }
+}
+```
+
+## Example Usage
+
+```nim
+import std/strutils
+
+echo "Hello, World!"
+echo "2 + 2 = ", 2 + 2
+```
+
+## Starter Template
+
+https://livecodes.io/?template=nim
+
+## Links
+
+- [Nim official website](https://nim-lang.org/)
+- [Nim manual](https://nim-lang.org/docs/manual.html)
+- [Nim standard library](https://nim-lang.org/docs/lib.html)
+- [@live-codes/nim-wasm](https://www.npmjs.com/package/@live-codes/nim-wasm)
+- [Nim (Wasm)](./nim-wasm.html.md) in LiveCodes
+- [C (Wasm)](./c-wasm.html.md) in LiveCodes
+- [C++ (Wasm)](./cpp-wasm.html.md) in LiveCodes

@@ -576,13 +576,13 @@
 <header>
   <div class="wrap">
     <h1>Manifest Debugger</h1>
-    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">10/10 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">10/10 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">150/150 story errors</a></div>
+    <div class="summary"><a class="filter-pill all" data-k="all" href="#filter-all">All</a><a class="filter-pill err" data-k="errors" href="#filter-errors">10/10 prop type errors</a><a class="filter-pill info" data-k="infos" href="#filter-infos">10/10 infos</a><a class="filter-pill err" data-k="story-errors" href="#filter-story-errors">193/193 story errors</a></div>
   </div>
 </header>
 <main>
   <div class="wrap">
     <div class="note info" style="margin-bottom: 16px;">
-            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>0.5s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
+            <strong>Tip:</strong> You are using <code>react-docgen</code> (the default). Generation took <strong>0.6s</strong>. For higher quality prop types, consider switching to <code>react-docgen-typescript</code> in your <code>main.ts</code>:
             <pre><code>typescript: {
   reactDocgen: 'react-docgen-typescript',
 }</code></pre>
@@ -897,7 +897,7 @@ export const Theme = livecodesStory({
       <div class="badges">
         <label for="c-2-embedoptions-config-err" class="badge err as-toggle">prop type error</label>
         <label for="c-2-embedoptions-config-info" class="badge info as-toggle">2 infos</label>
-        <label for="c-2-embedoptions-config-stories" class="badge err as-toggle">25/25 story errors</label>
+        <label for="c-2-embedoptions-config-stories" class="badge err as-toggle">26/26 story errors</label>
         
       </div>
     </div>
@@ -1033,6 +1033,7 @@ export const ModeResultCompiledOpen = livecodesStory({
   template: &#39;javascript&#39;,
   config: { mode: &#39;result&#39;, tools: { enabled: &#39;all&#39;, active: &#39;compiled&#39;, status: &#39;open&#39; } },
 });
+export const disableHomeLink = livecodesStory({ config: { disableHomeLink: true } });
 export const ConfigJsonURL = livecodesStory({
   config:
     &#39;https://raw.githubusercontent.com/hatemhosny/typescript-demo-for-testing-import-/gh-pages/src/livecodes.json&#39;,
@@ -1290,6 +1291,16 @@ ConfigJsonURL.storyName = &#39;Config JSON URL&#39;;
             <div class="note err">
               <div class="row">
                 <span class="ex-name">Mode Result Compiled Open</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Disable Home Link</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2488,7 +2499,7 @@ Style.storyName = &#39;style&#39;;
       <div class="badges">
         <label for="c-8-embedoptions-template-err" class="badge err as-toggle">prop type error</label>
         <label for="c-8-embedoptions-template-info" class="badge info as-toggle">2 infos</label>
-        <label for="c-8-embedoptions-template-stories" class="badge err as-toggle">55/55 story errors</label>
+        <label for="c-8-embedoptions-template-stories" class="badge err as-toggle">97/97 story errors</label>
         
       </div>
     </div>
@@ -2538,14 +2549,19 @@ export const TypeScript = livecodesStory({ template: &#39;typescript&#39; });
 TypeScript.storyName = &#39;TypeScript&#39;;
 export const React = livecodesStory({ template: &#39;react&#39; });
 export const ReactNative = livecodesStory({ template: &#39;react-native&#39; });
-export const Vue2 = livecodesStory({ template: &#39;vue2&#39; });
 export const Vue3 = livecodesStory({ template: &#39;vue&#39; });
 export const Angular = livecodesStory({ template: &#39;angular&#39; });
 export const Preact = livecodesStory({ template: &#39;preact&#39; });
 export const Svelte = livecodesStory({ template: &#39;svelte&#39; });
-export const Stencil = livecodesStory({ template: &#39;stencil&#39; });
 export const Solid = livecodesStory({ template: &#39;solid&#39; });
+export const Lit = livecodesStory({ template: &#39;lit&#39; });
+export const Stencil = livecodesStory({ template: &#39;stencil&#39; });
+export const Markdown = livecodesStory({ template: &#39;markdown&#39; });
 export const MDX = livecodesStory({ template: &#39;mdx&#39; });
+export const TailwindCSS = livecodesStory({ template: &#39;tailwindcss&#39; });
+export const ShadcnUI = livecodesStory({ template: &#39;shadcn-ui&#39; });
+export const DaisyUI = livecodesStory({ template: &#39;daisyui&#39; });
+export const Bootstrap = livecodesStory({ template: &#39;bootstrap&#39; });
 export const Astro = livecodesStory({ template: &#39;astro&#39; });
 export const Riotjs = livecodesStory({ template: &#39;riot&#39; });
 export const Malinajs = livecodesStory({ template: &#39;malina&#39; });
@@ -2555,8 +2571,9 @@ export const Backbone = livecodesStory({ template: &#39;backbone&#39; });
 export const Knockout = livecodesStory({ template: &#39;knockout&#39; });
 export const Jest = livecodesStory({ template: &#39;jest&#39; });
 export const JestReact = livecodesStory({ template: &#39;jest-react&#39; });
-export const Bootstrap = livecodesStory({ template: &#39;bootstrap&#39; });
-export const TailwindCSS = livecodesStory({ template: &#39;tailwindcss&#39; });
+export const D3 = livecodesStory({ template: &#39;d3&#39; });
+export const Phaser = livecodesStory({ template: &#39;phaser&#39; });
+export const Vue2 = livecodesStory({ template: &#39;vue2&#39; });
 export const CoffeeScript = livecodesStory({ template: &#39;coffeescript&#39; });
 CoffeeScript.storyName = &#39;CoffeeScript&#39;;
 export const LiveScript = livecodesStory({ template: &#39;livescript&#39; });
@@ -2564,37 +2581,81 @@ LiveScript.storyName = &#39;LiveScript&#39;;
 export const Civet = livecodesStory({ template: &#39;civet&#39; });
 export const Clio = livecodesStory({ template: &#39;clio&#39; });
 export const Imba = livecodesStory({ template: &#39;imba&#39; });
+export const Elm = livecodesStory({ template: &#39;elm&#39; });
 export const ReScript = livecodesStory({ template: &#39;rescript&#39; });
 ReScript.storyName = &#39;ReScript&#39;;
 export const Reason = livecodesStory({ template: &#39;reason&#39; });
 export const Ocaml = livecodesStory({ template: &#39;ocaml&#39; });
+export const OcamlJs = livecodesStory({ template: &#39;ocaml-js&#39; });
+export const Nim = livecodesStory({ template: &#39;nim&#39; });
+export const NimWasm = livecodesStory({ template: &#39;nim-wasm&#39; });
+export const JanetWasm = livecodesStory({ template: &#39;janet-wasm&#39; });
 export const Python = livecodesStory({ template: &#39;python&#39; });
-export const PythonPyodide = livecodesStory({ template: &#39;python-wasm&#39; });
+export const PythonWasm = livecodesStory({ template: &#39;python-wasm&#39; });
 export const R = livecodesStory({ template: &#39;r&#39; });
 export const Ruby = livecodesStory({ template: &#39;ruby&#39; });
 export const Go = livecodesStory({ template: &#39;go&#39; });
+export const GoWasm = livecodesStory({ template: &#39;go-wasm&#39; });
 export const PHP = livecodesStory({ template: &#39;php&#39; });
+export const PHPWasm = livecodesStory({ template: &#39;php-wasm&#39; });
+PHPWasm.storyName = &#39;PHP Wasm&#39;;
 export const Cpp = livecodesStory({ template: &#39;cpp&#39; });
-export const CppClang = livecodesStory({ template: &#39;cpp-wasm&#39; });
+export const CWasm = livecodesStory({ template: &#39;c-wasm&#39; });
+export const CppWasm = livecodesStory({ template: &#39;cpp-wasm&#39; });
+export const CrystalWasm = livecodesStory({ template: &#39;crystal-wasm&#39; });
+CrystalWasm.storyName = &#39;Crystal (Wasm)&#39;;
+export const OdinWasm = livecodesStory({ template: &#39;odin-wasm&#39; });
+OdinWasm.storyName = &#39;Odin (Wasm)&#39;;
+export const ObjcWasm = livecodesStory({ template: &#39;objc-wasm&#39; });
+export const DWasm = livecodesStory({ template: &#39;d-wasm&#39; });
+export const CobolWasm = livecodesStory({ template: &#39;cobol-wasm&#39; });
+CobolWasm.storyName = &#39;COBOL (Wasm)&#39;;
+export const FortranWasm = livecodesStory({ template: &#39;fortran-wasm&#39; });
+FortranWasm.storyName = &#39;Fortran (Wasm)&#39;;
+export const VWasm = livecodesStory({ template: &#39;v-wasm&#39; });
+export const RustWasm = livecodesStory({ template: &#39;rust-wasm&#39; });
+export const Scala = livecodesStory({ template: &#39;scala&#39; });
+export const SwiftWasm = livecodesStory({ template: &#39;swift-wasm&#39; });
+export const ZigWasm = livecodesStory({ template: &#39;zig-wasm&#39; });
+export const Java = livecodesStory({ template: &#39;java&#39; });
+export const CSharpWasm = livecodesStory({ template: &#39;csharp-wasm&#39; });
+export const BlazorWasm = livecodesStory({ template: &#39;blazor-wasm&#39; });
+BlazorWasm.storyName = &#39;Blazor (Wasm)&#39;;
+export const VbWasm = livecodesStory({ template: &#39;vb-wasm&#39; });
+export const FSharp = livecodesStory({ template: &#39;fsharp&#39; });
+export const FSharpWasm = livecodesStory({ template: &#39;fsharp-wasm&#39; });
+export const Haskell = livecodesStory({ template: &#39;haskell&#39; });
+export const HaskellWasm = livecodesStory({ template: &#39;haskell-wasm&#39; });
+export const Scheme = livecodesStory({ template: &#39;scheme&#39; });
+export const CommonLisp = livecodesStory({ template: &#39;commonlisp&#39; });
+export const ClojureScriptCherry = livecodesStory({ template: &#39;clojurescript-cherry&#39; });
+ClojureScriptCherry.storyName = &#39;ClojureScript (Cherry)&#39;;
+export const ClojureScriptSelfHosted = livecodesStory({ template: &#39;clojurescript-selfhosted&#39; });
+ClojureScriptSelfHosted.storyName = &#39;ClojureScript (self-hosted)&#39;;
 export const Perl = livecodesStory({ template: &#39;perl&#39; });
 export const Lua = livecodesStory({ template: &#39;lua&#39; });
+export const LuaWasm = livecodesStory({ template: &#39;lua-wasm&#39; });
 export const Teal = livecodesStory({ template: &#39;teal&#39; });
 export const Fennel = livecodesStory({ template: &#39;fennel&#39; });
 export const Julia = livecodesStory({ template: &#39;julia&#39; });
-export const Scheme = livecodesStory({ template: &#39;scheme&#39; });
-export const CommonLisp = livecodesStory({ template: &#39;commonlisp&#39; });
-export const ClojureScript = livecodesStory({ template: &#39;clojurescript&#39; });
-ClojureScript.storyName = &#39;ClojureScript&#39;;
 export const Tcl = livecodesStory({ template: &#39;tcl&#39; });
-export const Markdown = livecodesStory({ template: &#39;markdown&#39; });
+export const AdaWasm = livecodesStory({ template: &#39;ada-wasm&#39; });
+export const Pascal = livecodesStory({ template: &#39;pascal&#39; });
 export const AssemblyScript = livecodesStory({ template: &#39;assemblyscript&#39; });
 AssemblyScript.storyName = &#39;AssemblyScript&#39;;
 export const WebAssemblyText = livecodesStory({ template: &#39;wat&#39; });
 WebAssemblyText.storyName = &#39;WebAssembly Text&#39;;
+export const AssemblyWasm = livecodesStory({ template: &#39;assembly-wasm&#39; });
+AssemblyWasm.storyName = &#39;Assembly (Wasm)&#39;;
 export const SQL = livecodesStory({ template: &#39;sql&#39; });
+export const PostgreSQL = livecodesStory({ template: &#39;postgresql&#39; });
+export const DuckDB = livecodesStory({ template: &#39;duckdb&#39; });
 export const Prolog = livecodesStory({ template: &#39;prolog&#39; });
+export const Minizinc = livecodesStory({ template: &#39;minizinc&#39; });
 export const Blockly = livecodesStory({ template: &#39;blockly&#39; });
-export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
+export const Diagrams = livecodesStory({ template: &#39;diagrams&#39; });
+export const Dart = livecodesStory({ template: &#39;dart&#39; });
+export const Flutter = livecodesStory({ template: &#39;flutter&#39; });
 </code></pre></div>
     </div>
         </div>
@@ -2666,16 +2727,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Vue 2</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Vue 3</span>
                 <span class="badge err">story error</span>
               </div>
@@ -2716,16 +2767,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Stencil</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Solid</span>
                 <span class="badge err">story error</span>
               </div>
@@ -2736,7 +2777,77 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Lit</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Stencil</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Markdown</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">MDX</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Tailwind CSS</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Shadcn UI</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Daisy UI</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Bootstrap</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2826,7 +2937,7 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Bootstrap</span>
+                <span class="ex-name">D 3</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2836,7 +2947,17 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Tailwind CSS</span>
+                <span class="ex-name">Phaser</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Vue 2</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2896,6 +3017,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Elm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">ReScript</span>
                 <span class="badge err">story error</span>
               </div>
@@ -2926,6 +3057,46 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Ocaml Js</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Nim</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Nim Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Janet Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">Python</span>
                 <span class="badge err">story error</span>
               </div>
@@ -2936,7 +3107,7 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Python Pyodide</span>
+                <span class="ex-name">Python Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2976,7 +3147,27 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Go Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">PHP</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">PHP Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -2996,7 +3187,247 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Cpp Clang</span>
+                <span class="ex-name">C Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Cpp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Crystal (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Odin (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Objc Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">D Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">COBOL (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Fortran (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">V Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Rust Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Scala</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Swift Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Zig Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Java</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">C Sharp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Blazor (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Vb Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">F Sharp</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">F Sharp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Haskell</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Haskell Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Scheme</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Common Lisp</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">ClojureScript (Cherry)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">ClojureScript (self-hosted)</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -3017,6 +3448,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             <div class="note err">
               <div class="row">
                 <span class="ex-name">Lua</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Lua Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -3056,36 +3497,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Scheme</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
-                <span class="ex-name">Common Lisp</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
-                <span class="ex-name">ClojureScript</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Tcl</span>
                 <span class="badge err">story error</span>
               </div>
@@ -3096,7 +3507,17 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Markdown</span>
+                <span class="ex-name">Ada Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Pascal</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -3126,7 +3547,37 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Assembly (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">SQL</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Postgre SQL</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Duck DB</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -3146,6 +3597,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Minizinc</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">Blockly</span>
                 <span class="badge err">story error</span>
               </div>
@@ -3156,7 +3617,27 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Diagram</span>
+                <span class="ex-name">Diagrams</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Dart</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Flutter</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -3606,7 +4087,7 @@ export const Theme = livecodesStory({
       <div class="badges">
         <label for="c-error-2-embedoptions-config-err" class="badge err as-toggle">prop type error</label>
         <label for="c-error-2-embedoptions-config-info" class="badge info as-toggle">2 infos</label>
-        <label for="c-error-2-embedoptions-config-stories" class="badge err as-toggle">25/25 story errors</label>
+        <label for="c-error-2-embedoptions-config-stories" class="badge err as-toggle">26/26 story errors</label>
         
       </div>
     </div>
@@ -3742,6 +4223,7 @@ export const ModeResultCompiledOpen = livecodesStory({
   template: &#39;javascript&#39;,
   config: { mode: &#39;result&#39;, tools: { enabled: &#39;all&#39;, active: &#39;compiled&#39;, status: &#39;open&#39; } },
 });
+export const disableHomeLink = livecodesStory({ config: { disableHomeLink: true } });
 export const ConfigJsonURL = livecodesStory({
   config:
     &#39;https://raw.githubusercontent.com/hatemhosny/typescript-demo-for-testing-import-/gh-pages/src/livecodes.json&#39;,
@@ -3999,6 +4481,16 @@ ConfigJsonURL.storyName = &#39;Config JSON URL&#39;;
             <div class="note err">
               <div class="row">
                 <span class="ex-name">Mode Result Compiled Open</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Disable Home Link</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5197,7 +5689,7 @@ Style.storyName = &#39;style&#39;;
       <div class="badges">
         <label for="c-error-8-embedoptions-template-err" class="badge err as-toggle">prop type error</label>
         <label for="c-error-8-embedoptions-template-info" class="badge info as-toggle">2 infos</label>
-        <label for="c-error-8-embedoptions-template-stories" class="badge err as-toggle">55/55 story errors</label>
+        <label for="c-error-8-embedoptions-template-stories" class="badge err as-toggle">97/97 story errors</label>
         
       </div>
     </div>
@@ -5247,14 +5739,19 @@ export const TypeScript = livecodesStory({ template: &#39;typescript&#39; });
 TypeScript.storyName = &#39;TypeScript&#39;;
 export const React = livecodesStory({ template: &#39;react&#39; });
 export const ReactNative = livecodesStory({ template: &#39;react-native&#39; });
-export const Vue2 = livecodesStory({ template: &#39;vue2&#39; });
 export const Vue3 = livecodesStory({ template: &#39;vue&#39; });
 export const Angular = livecodesStory({ template: &#39;angular&#39; });
 export const Preact = livecodesStory({ template: &#39;preact&#39; });
 export const Svelte = livecodesStory({ template: &#39;svelte&#39; });
-export const Stencil = livecodesStory({ template: &#39;stencil&#39; });
 export const Solid = livecodesStory({ template: &#39;solid&#39; });
+export const Lit = livecodesStory({ template: &#39;lit&#39; });
+export const Stencil = livecodesStory({ template: &#39;stencil&#39; });
+export const Markdown = livecodesStory({ template: &#39;markdown&#39; });
 export const MDX = livecodesStory({ template: &#39;mdx&#39; });
+export const TailwindCSS = livecodesStory({ template: &#39;tailwindcss&#39; });
+export const ShadcnUI = livecodesStory({ template: &#39;shadcn-ui&#39; });
+export const DaisyUI = livecodesStory({ template: &#39;daisyui&#39; });
+export const Bootstrap = livecodesStory({ template: &#39;bootstrap&#39; });
 export const Astro = livecodesStory({ template: &#39;astro&#39; });
 export const Riotjs = livecodesStory({ template: &#39;riot&#39; });
 export const Malinajs = livecodesStory({ template: &#39;malina&#39; });
@@ -5264,8 +5761,9 @@ export const Backbone = livecodesStory({ template: &#39;backbone&#39; });
 export const Knockout = livecodesStory({ template: &#39;knockout&#39; });
 export const Jest = livecodesStory({ template: &#39;jest&#39; });
 export const JestReact = livecodesStory({ template: &#39;jest-react&#39; });
-export const Bootstrap = livecodesStory({ template: &#39;bootstrap&#39; });
-export const TailwindCSS = livecodesStory({ template: &#39;tailwindcss&#39; });
+export const D3 = livecodesStory({ template: &#39;d3&#39; });
+export const Phaser = livecodesStory({ template: &#39;phaser&#39; });
+export const Vue2 = livecodesStory({ template: &#39;vue2&#39; });
 export const CoffeeScript = livecodesStory({ template: &#39;coffeescript&#39; });
 CoffeeScript.storyName = &#39;CoffeeScript&#39;;
 export const LiveScript = livecodesStory({ template: &#39;livescript&#39; });
@@ -5273,37 +5771,81 @@ LiveScript.storyName = &#39;LiveScript&#39;;
 export const Civet = livecodesStory({ template: &#39;civet&#39; });
 export const Clio = livecodesStory({ template: &#39;clio&#39; });
 export const Imba = livecodesStory({ template: &#39;imba&#39; });
+export const Elm = livecodesStory({ template: &#39;elm&#39; });
 export const ReScript = livecodesStory({ template: &#39;rescript&#39; });
 ReScript.storyName = &#39;ReScript&#39;;
 export const Reason = livecodesStory({ template: &#39;reason&#39; });
 export const Ocaml = livecodesStory({ template: &#39;ocaml&#39; });
+export const OcamlJs = livecodesStory({ template: &#39;ocaml-js&#39; });
+export const Nim = livecodesStory({ template: &#39;nim&#39; });
+export const NimWasm = livecodesStory({ template: &#39;nim-wasm&#39; });
+export const JanetWasm = livecodesStory({ template: &#39;janet-wasm&#39; });
 export const Python = livecodesStory({ template: &#39;python&#39; });
-export const PythonPyodide = livecodesStory({ template: &#39;python-wasm&#39; });
+export const PythonWasm = livecodesStory({ template: &#39;python-wasm&#39; });
 export const R = livecodesStory({ template: &#39;r&#39; });
 export const Ruby = livecodesStory({ template: &#39;ruby&#39; });
 export const Go = livecodesStory({ template: &#39;go&#39; });
+export const GoWasm = livecodesStory({ template: &#39;go-wasm&#39; });
 export const PHP = livecodesStory({ template: &#39;php&#39; });
+export const PHPWasm = livecodesStory({ template: &#39;php-wasm&#39; });
+PHPWasm.storyName = &#39;PHP Wasm&#39;;
 export const Cpp = livecodesStory({ template: &#39;cpp&#39; });
-export const CppClang = livecodesStory({ template: &#39;cpp-wasm&#39; });
+export const CWasm = livecodesStory({ template: &#39;c-wasm&#39; });
+export const CppWasm = livecodesStory({ template: &#39;cpp-wasm&#39; });
+export const CrystalWasm = livecodesStory({ template: &#39;crystal-wasm&#39; });
+CrystalWasm.storyName = &#39;Crystal (Wasm)&#39;;
+export const OdinWasm = livecodesStory({ template: &#39;odin-wasm&#39; });
+OdinWasm.storyName = &#39;Odin (Wasm)&#39;;
+export const ObjcWasm = livecodesStory({ template: &#39;objc-wasm&#39; });
+export const DWasm = livecodesStory({ template: &#39;d-wasm&#39; });
+export const CobolWasm = livecodesStory({ template: &#39;cobol-wasm&#39; });
+CobolWasm.storyName = &#39;COBOL (Wasm)&#39;;
+export const FortranWasm = livecodesStory({ template: &#39;fortran-wasm&#39; });
+FortranWasm.storyName = &#39;Fortran (Wasm)&#39;;
+export const VWasm = livecodesStory({ template: &#39;v-wasm&#39; });
+export const RustWasm = livecodesStory({ template: &#39;rust-wasm&#39; });
+export const Scala = livecodesStory({ template: &#39;scala&#39; });
+export const SwiftWasm = livecodesStory({ template: &#39;swift-wasm&#39; });
+export const ZigWasm = livecodesStory({ template: &#39;zig-wasm&#39; });
+export const Java = livecodesStory({ template: &#39;java&#39; });
+export const CSharpWasm = livecodesStory({ template: &#39;csharp-wasm&#39; });
+export const BlazorWasm = livecodesStory({ template: &#39;blazor-wasm&#39; });
+BlazorWasm.storyName = &#39;Blazor (Wasm)&#39;;
+export const VbWasm = livecodesStory({ template: &#39;vb-wasm&#39; });
+export const FSharp = livecodesStory({ template: &#39;fsharp&#39; });
+export const FSharpWasm = livecodesStory({ template: &#39;fsharp-wasm&#39; });
+export const Haskell = livecodesStory({ template: &#39;haskell&#39; });
+export const HaskellWasm = livecodesStory({ template: &#39;haskell-wasm&#39; });
+export const Scheme = livecodesStory({ template: &#39;scheme&#39; });
+export const CommonLisp = livecodesStory({ template: &#39;commonlisp&#39; });
+export const ClojureScriptCherry = livecodesStory({ template: &#39;clojurescript-cherry&#39; });
+ClojureScriptCherry.storyName = &#39;ClojureScript (Cherry)&#39;;
+export const ClojureScriptSelfHosted = livecodesStory({ template: &#39;clojurescript-selfhosted&#39; });
+ClojureScriptSelfHosted.storyName = &#39;ClojureScript (self-hosted)&#39;;
 export const Perl = livecodesStory({ template: &#39;perl&#39; });
 export const Lua = livecodesStory({ template: &#39;lua&#39; });
+export const LuaWasm = livecodesStory({ template: &#39;lua-wasm&#39; });
 export const Teal = livecodesStory({ template: &#39;teal&#39; });
 export const Fennel = livecodesStory({ template: &#39;fennel&#39; });
 export const Julia = livecodesStory({ template: &#39;julia&#39; });
-export const Scheme = livecodesStory({ template: &#39;scheme&#39; });
-export const CommonLisp = livecodesStory({ template: &#39;commonlisp&#39; });
-export const ClojureScript = livecodesStory({ template: &#39;clojurescript&#39; });
-ClojureScript.storyName = &#39;ClojureScript&#39;;
 export const Tcl = livecodesStory({ template: &#39;tcl&#39; });
-export const Markdown = livecodesStory({ template: &#39;markdown&#39; });
+export const AdaWasm = livecodesStory({ template: &#39;ada-wasm&#39; });
+export const Pascal = livecodesStory({ template: &#39;pascal&#39; });
 export const AssemblyScript = livecodesStory({ template: &#39;assemblyscript&#39; });
 AssemblyScript.storyName = &#39;AssemblyScript&#39;;
 export const WebAssemblyText = livecodesStory({ template: &#39;wat&#39; });
 WebAssemblyText.storyName = &#39;WebAssembly Text&#39;;
+export const AssemblyWasm = livecodesStory({ template: &#39;assembly-wasm&#39; });
+AssemblyWasm.storyName = &#39;Assembly (Wasm)&#39;;
 export const SQL = livecodesStory({ template: &#39;sql&#39; });
+export const PostgreSQL = livecodesStory({ template: &#39;postgresql&#39; });
+export const DuckDB = livecodesStory({ template: &#39;duckdb&#39; });
 export const Prolog = livecodesStory({ template: &#39;prolog&#39; });
+export const Minizinc = livecodesStory({ template: &#39;minizinc&#39; });
 export const Blockly = livecodesStory({ template: &#39;blockly&#39; });
-export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
+export const Diagrams = livecodesStory({ template: &#39;diagrams&#39; });
+export const Dart = livecodesStory({ template: &#39;dart&#39; });
+export const Flutter = livecodesStory({ template: &#39;flutter&#39; });
 </code></pre></div>
     </div>
         </div>
@@ -5375,16 +5917,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Vue 2</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Vue 3</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5425,16 +5957,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Stencil</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Solid</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5445,7 +5967,77 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Lit</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Stencil</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Markdown</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">MDX</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Tailwind CSS</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Shadcn UI</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Daisy UI</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Bootstrap</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5535,7 +6127,7 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Bootstrap</span>
+                <span class="ex-name">D 3</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5545,7 +6137,17 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Tailwind CSS</span>
+                <span class="ex-name">Phaser</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Vue 2</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5605,6 +6207,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Elm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">ReScript</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5635,6 +6247,46 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Ocaml Js</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Nim</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Nim Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Janet Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">Python</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5645,7 +6297,7 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Python Pyodide</span>
+                <span class="ex-name">Python Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5685,7 +6337,27 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Go Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">PHP</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">PHP Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5705,7 +6377,247 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Cpp Clang</span>
+                <span class="ex-name">C Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Cpp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Crystal (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Odin (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Objc Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">D Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">COBOL (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Fortran (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">V Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Rust Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Scala</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Swift Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Zig Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Java</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">C Sharp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Blazor (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Vb Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">F Sharp</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">F Sharp Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Haskell</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Haskell Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Scheme</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Common Lisp</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">ClojureScript (Cherry)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">ClojureScript (self-hosted)</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5726,6 +6638,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             <div class="note err">
               <div class="row">
                 <span class="ex-name">Lua</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Lua Wasm</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5765,36 +6687,6 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Scheme</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
-                <span class="ex-name">Common Lisp</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
-                <span class="ex-name">ClojureScript</span>
-                <span class="badge err">story error</span>
-              </div>
-              
-              
-              
-              <pre><code>Could not generate snippet without component name.</code></pre>
-            </div>
-            <div class="note err">
-              <div class="row">
                 <span class="ex-name">Tcl</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5805,7 +6697,17 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Markdown</span>
+                <span class="ex-name">Ada Wasm</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Pascal</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5835,7 +6737,37 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Assembly (Wasm)</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">SQL</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Postgre SQL</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Duck DB</span>
                 <span class="badge err">story error</span>
               </div>
               
@@ -5855,6 +6787,16 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
+                <span class="ex-name">Minizinc</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
                 <span class="ex-name">Blockly</span>
                 <span class="badge err">story error</span>
               </div>
@@ -5865,7 +6807,27 @@ export const Diagram = livecodesStory({ template: &#39;diagrams&#39; });
             </div>
             <div class="note err">
               <div class="row">
-                <span class="ex-name">Diagram</span>
+                <span class="ex-name">Diagrams</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Dart</span>
+                <span class="badge err">story error</span>
+              </div>
+              
+              
+              
+              <pre><code>Could not generate snippet without component name.</code></pre>
+            </div>
+            <div class="note err">
+              <div class="row">
+                <span class="ex-name">Flutter</span>
                 <span class="badge err">story error</span>
               </div>
               

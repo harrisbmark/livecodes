@@ -12,13 +12,13 @@ Examples:
 Demo for a static self-hosted app (on GitHub Pages): https://live-codes.github.io/livecodes
 
 Most likely, you will not need to provide these services yourself, and the app will work just fine using the other compatible services (e.g. dpaste).
-However, if you do need to provide them, you may wish to use the included [docker setup](../advanced/docker.html.md) which provides a self-hosted implementation for these services, very similar to the official [hosted app](https://livecodes.io).
+However, if you do need to provide them, you may wish to use the included [Docker setup](../advanced/docker.html.md) (for VPS) or [PHP setup](../advanced/php.html.md) (for shared hosting) which provide a self-hosted implementation for these services, very similar to the official [hosted app](https://livecodes.io).
 You can find the list of provided services [here](../advanced/docker.html.md)#services).
 
-Demo for a self-hosted app that uses the [docker setup](../advanced/docker.html.md) (on a VPS): https://vps.livecodes.io
+Demo for a self-hosted app that uses the [Docker setup](../advanced/docker.html.md) (on a VPS): https://vps.livecodes.io
 
 :::info
 
-LiveCodes [sponsors](../sponsor.html.md) (Bronze sponsors and above) get access to a hosted [docker setup](../advanced/docker.html.md) with managed [services](../advanced/docker.html.md)#services).
+LiveCodes [sponsors](../sponsor.html.md) (Bronze sponsors and above) get access to a hosted [Docker setup](../advanced/docker.html.md) with managed [services](../advanced/docker.html.md)#services).
 
 :::

@@ -1,3 +1,92 @@
-# C/C++ (Wasm)
+# C++ (Wasm)
 
-TODO...
+The C++ (Wasm) language support in LiveCodes uses [Clang](https://clang.llvm.org/) compiled to WebAssembly via [`@live-codes/clang-wasm`](https://www.npmjs.com/package/@live-codes/clang-wasm). Unlike the [JSCPP-based C++](./cpp.html.md) interpreter, this provides a real C++ compiler running on WebAssembly.
+
+## Usage
+
+### Demo
+
+import LiveCodes from '../../src/components/LiveCodes.tsx';
+
+<LiveCodes template="cpp-wasm" height="80vh"></LiveCodes>
+
+### Standard I/O
+
+C++ programs use `cin` for input and `cout` for output. Input is passed from JavaScript via `livecodes.cpp.run()`, and output is returned as a string.
+
+### JavaScript Interoperability
+
+JavaScript can interact with the C++ runtime using the `livecodes.cpp` global:
+
+- `livecodes.cpp.input` — set this to pass input to the program (read by `cin`)
+- `livecodes.cpp.run(input?)` — compile and run the program with optional input, returns a promise that resolves to `{ input, output, error, exitCode }`
+- `livecodes.cpp.loaded` — a promise that resolves when the runtime is ready
+- `livecodes.cpp.error` — the compiler diagnostics, if the code failed to compile
+- `livecodes.cpp.exitCode` — the exit code of the program
+
+The same API is available as `livecodes.clangWasm` for all Clang-based languages.
+
+## Language Info
+
+### Name
+
+`cpp-wasm`
+
+### Aliases / Extensions
+
+`cpp`, `cc`, `cp`, `cxx`, `c++`, `cppm`, `ixx`, `ii`, `hpp`, `cppwasm`, `cpp-wasm`, `wasm.cpp`, `clang`, `clang.cpp`, `clang-cpp`
+
+### Editor
+
+`script`
+
+## Compiler
+
+[Clang](https://clang.llvm.org/) compiled to WebAssembly via [@live-codes/clang-wasm](https://www.npmjs.com/package/@live-codes/clang-wasm), with a complete libc++.
+
+### Version
+
+Clang `v22.1.8`. The standards `gnu++11`, `gnu++14`, `gnu++17`, `gnu++20` and `gnu++23` are supported (default: `gnu++23`).
+
+## Custom Settings
+
+The Clang compiler can be configured using [custom settings](../advanced/custom-settings.html.md) added to the property `cpp-wasm`:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `std` | `string` | The C++ standard to compile with: `gnu++11`, `gnu++14`, `gnu++17`, `gnu++20` or `gnu++23`. Defaults to `gnu++23`. |
+| `compileArgs` | `string[]` | Extra clang flags, e.g. `["-Wall", "-O2"]`. |
+| `args` | `string[]` | Command-line arguments passed to the program (`argv`). |
+
+```json title="Custom Settings"
+{
+  "cpp-wasm": {
+    "std": "gnu++20",
+    "compileArgs": ["-Wall", "-O2"],
+    "args": ["--name", "LiveCodes"]
+  }
+}
+```
+
+## Code Formatting
+
+Using [@wasm-fmt/clang-format](https://github.com/wasm-fmt/clang-format), applying [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
+
+## Live Reload
+
+By default, new code changes are sent to the result page without a full page reload, avoiding the need to re-download the compiler. This behavior can be disabled by adding the code comment `// __livecodes_reload__` to the C++ code, which forces a full page reload.
+
+This comment can be added in the `hiddenContent` property of the editor for embedded playgrounds.
+
+## Starter Template
+
+https://livecodes.io/?template=cpp-wasm
+
+## Links
+
+- [Clang](https://clang.llvm.org/)
+- [@live-codes/clang-wasm](https://www.npmjs.com/package/@live-codes/clang-wasm)
+- [C++ (JSCPP)](./cpp.html.md) in LiveCodes
+- [C (Wasm)](./c-wasm.html.md) in LiveCodes
+- [Objective-C (Wasm)](./objc-wasm.html.md) in LiveCodes
+- [Objective-C++ (Wasm)](./objcpp-wasm.html.md) in LiveCodes

@@ -36,4 +36,5 @@
 - [WatchDestroy](type-aliases/WatchDestroy.md)
 - [WatchLoad](type-aliases/WatchLoad.md)
 - [WatchReady](type-aliases/WatchReady.md)
+- [WatchRun](type-aliases/WatchRun.md)
 - [WatchTests](type-aliases/WatchTests.md)

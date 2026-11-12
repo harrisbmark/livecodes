@@ -1,0 +1,34 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([["2405"],{94677:function(e,i,l){l.r(i),l.d(i,{default:()=>p,config:()=>c,frontMatter:()=>t,assets:()=>r,metadata:()=>s,toc:()=>m,contentTitle:()=>o});var s=JSON.parse('{"id":"languages/elm","title":"Elm","description":"Elm is a delightful language for reliable web applications.","source":"@site/docs/languages/elm.mdx","sourceDirName":"languages","slug":"/languages/elm","permalink":"/livecodes/docs/languages/elm","draft":false,"unlisted":false,"editUrl":"https://github.com/live-codes/livecodes/tree/develop/docs/docs/languages/elm.mdx","tags":[],"version":"current","frontMatter":{},"sidebar":"docsSidebar","previous":{"title":"EJS","permalink":"/livecodes/docs/languages/ejs"},"next":{"title":"Eta","permalink":"/livecodes/docs/languages/eta"}}'),n=l("85893"),a=l("50065"),d=l("11802");let t={},o="Elm",r={},c={activeEditor:"script",script:{language:"elm",content:`module Main exposing (main)
+
+import Browser
+import Html exposing (Html, button, div, h1, text)
+import Html.Events exposing (onClick)
+
+
+type alias Model =
+    Int
+
+
+type Msg
+    = Increment
+
+
+update : Msg -> Model -> Model
+update msg model =
+    case msg of
+        Increment ->
+            model + 1
+
+
+view : Model -> Html Msg
+view model =
+    div []
+        [ h1 [] [ text ("You clicked " ++ String.fromInt model ++ " times.") ]
+        , button [ onClick Increment ] [ text "Click me" ]
+        ]
+
+
+main : Program () Model Msg
+main =
+    Browser.sandbox { init = 0, update = update, view = view }
+`},mode:"simple",editor:"auto"},m=[{value:"Basic Demo",id:"basic-demo",level:2},{value:"Usage",id:"usage",level:2},{value:"Language Info",id:"language-info",level:2},{value:"Name",id:"name",level:3},{value:"Aliases / Extensions",id:"aliases--extensions",level:3},{value:"Editor",id:"editor",level:3},{value:"Compiler",id:"compiler",level:2},{value:"Version",id:"version",level:3},{value:"Code Formatting",id:"code-formatting",level:2},{value:"Limitations",id:"limitations",level:2},{value:"Starter Template",id:"starter-template",level:2},{value:"Links",id:"links",level:2}];function h(e){let i={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",header:"header",li:"li",p:"p",strong:"strong",ul:"ul",...(0,a.a)(),...e.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(i.header,{children:(0,n.jsx)(i.h1,{id:"elm",children:"Elm"})}),"\n",(0,n.jsxs)(i.p,{children:[(0,n.jsx)(i.a,{href:"https://elm-lang.org/",children:"Elm"})," is a delightful language for reliable web applications.\nIt is a purely functional language that compiles to JavaScript."]}),"\n",(0,n.jsxs)(i.p,{children:["LiveCodes compiles Elm in the browser using\n",(0,n.jsx)(i.a,{href:"https://www.npmjs.com/package/@live-codes/elm-wasm",children:"@live-codes/elm-wasm"}),",\na WebAssembly build of the Elm compiler."]}),"\n",(0,n.jsx)(i.h2,{id:"basic-demo",children:"Basic Demo"}),"\n","\n","\n",(0,n.jsx)(d.Z,{config:c}),"\n",(0,n.jsx)(i.p,{children:"See below for more examples."}),"\n",(0,n.jsx)(i.h2,{id:"usage",children:"Usage"}),"\n",(0,n.jsxs)(i.p,{children:["Write Elm code in the script editor. The module must expose ",(0,n.jsx)(i.code,{children:"main"})," (e.g.\n",(0,n.jsx)(i.code,{children:"module Main exposing (main)"}),"), as required by the Elm compiler."]}),"\n",(0,n.jsxs)(i.p,{children:["The code is compiled to JavaScript, then the compiled program is initialized in the result page\nby a ",(0,n.jsx)(i.code,{children:"Elm.<ModuleName>.init({ node })"})," call into a ",(0,n.jsx)(i.code,{children:"div"})," appended to the page body.\nIf you wish to use a specific DOM element use ",(0,n.jsx)(i.code,{children:'"livecodes-app"'})," as the element ",(0,n.jsx)(i.code,{children:"id"}),".\nThis works for the common program types (",(0,n.jsx)(i.code,{children:"Browser.sandbox"}),", ",(0,n.jsx)(i.code,{children:"Browser.element"}),", ",(0,n.jsx)(i.code,{children:"Browser.document"})," and ",(0,n.jsx)(i.code,{children:"Browser.application"}),")."]}),"\n",(0,n.jsxs)(i.p,{children:["Imports of modules from Elm packages are detected automatically. Packages the compiler ships with\n(a set of ",(0,n.jsx)(i.code,{children:"elm/*"})," packages, provided as precompiled artifacts) are enabled without downloading\nanything; any other package is downloaded from jsDelivr and installed into the compiler's virtual\nfile system."]}),"\n",(0,n.jsxs)(i.p,{children:["The generated JavaScript can be inspected in the ",(0,n.jsx)(i.strong,{children:"Compiled code"})," tool pane."]}),"\n",(0,n.jsx)(i.h2,{id:"language-info",children:"Language Info"}),"\n",(0,n.jsx)(i.h3,{id:"name",children:"Name"}),"\n",(0,n.jsx)(i.p,{children:(0,n.jsx)(i.code,{children:"elm"})}),"\n",(0,n.jsx)(i.h3,{id:"aliases--extensions",children:"Aliases / Extensions"}),"\n",(0,n.jsx)(i.p,{children:(0,n.jsx)(i.code,{children:"elm"})}),"\n",(0,n.jsx)(i.h3,{id:"editor",children:"Editor"}),"\n",(0,n.jsx)(i.p,{children:(0,n.jsx)(i.code,{children:"script"})}),"\n",(0,n.jsx)(i.h2,{id:"compiler",children:"Compiler"}),"\n",(0,n.jsxs)(i.p,{children:[(0,n.jsx)(i.a,{href:"https://www.npmjs.com/package/@live-codes/elm-wasm",children:"@live-codes/elm-wasm"}),", a WebAssembly build\nof the ",(0,n.jsx)(i.a,{href:"https://github.com/elm/compiler",children:"Elm compiler"}),"."]}),"\n",(0,n.jsx)(i.h3,{id:"version",children:"Version"}),"\n",(0,n.jsxs)(i.p,{children:["Elm 0.19.1 (",(0,n.jsx)(i.code,{children:"@live-codes/elm-wasm"})," 0.2.1)"]}),"\n",(0,n.jsx)(i.h2,{id:"code-formatting",children:"Code Formatting"}),"\n",(0,n.jsx)(i.p,{children:"Not supported."}),"\n",(0,n.jsx)(i.h2,{id:"limitations",children:"Limitations"}),"\n",(0,n.jsxs)(i.ul,{children:["\n",(0,n.jsxs)(i.li,{children:["The first run downloads the compiler (~10.6 MB ",(0,n.jsx)(i.code,{children:"ulm.wasm"}),") in addition to the Elm package\ndata."]}),"\n",(0,n.jsx)(i.li,{children:"Elm source is compiled as a single module. Other modules are provided by installed packages,\nwhich are resolved at compile time (jsDelivr by default)."}),"\n"]}),"\n",(0,n.jsx)(i.h2,{id:"starter-template",children:"Starter Template"}),"\n",(0,n.jsx)(i.p,{children:(0,n.jsx)(i.a,{href:"https://livecodes.io/?template=elm",children:"https://livecodes.io/?template=elm"})}),"\n",(0,n.jsx)(i.h2,{id:"links",children:"Links"}),"\n",(0,n.jsxs)(i.ul,{children:["\n",(0,n.jsx)(i.li,{children:(0,n.jsx)(i.a,{href:"https://elm-lang.org/",children:"Elm"})}),"\n",(0,n.jsx)(i.li,{children:(0,n.jsx)(i.a,{href:"https://guide.elm-lang.org/",children:"Elm guide"})}),"\n"]})]})}function p(e={}){let{wrapper:i}={...(0,a.a)(),...e.components};return i?(0,n.jsx)(i,{...e,children:(0,n.jsx)(h,{...e})}):h(e)}}}]);

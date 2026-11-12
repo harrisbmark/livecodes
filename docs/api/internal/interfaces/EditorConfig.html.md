@@ -22,7 +22,7 @@ true
 
 #### Defined in
 
-[src/sdk/models.ts:930](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L930)
+[src/sdk/models.ts:1118](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1118)
 
 ***
 
@@ -46,7 +46,7 @@ undefined
 
 #### Defined in
 
-[src/sdk/models.ts:851](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L851)
+[src/sdk/models.ts:1039](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1039)
 
 ***
 
@@ -58,7 +58,7 @@ Sets [editor mode](https://livecodes.io/docs/features/editor-settings#editor-mod
 
 #### Defined in
 
-[src/sdk/models.ts:947](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L947)
+[src/sdk/models.ts:1135](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1135)
 
 ***
 
@@ -94,7 +94,7 @@ See docs for [editor themes](https://livecodes.io/docs/configuration/configurati
 
 #### Defined in
 
-[src/sdk/models.ts:877](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L877)
+[src/sdk/models.ts:1065](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1065)
 
 ***
 
@@ -112,7 +112,7 @@ true
 
 #### Defined in
 
-[src/sdk/models.ts:942](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L942)
+[src/sdk/models.ts:1130](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1130)
 
 ***
 
@@ -130,7 +130,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:924](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L924)
+[src/sdk/models.ts:1112](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1112)
 
 ***
 
@@ -142,7 +142,7 @@ Sets the [code editor](https://livecodes.io/docs/features/editor-settings) font 
 
 #### Defined in
 
-[src/sdk/models.ts:882](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L882)
+[src/sdk/models.ts:1070](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1070)
 
 ***
 
@@ -162,7 +162,7 @@ undefined
 
 #### Defined in
 
-[src/sdk/models.ts:890](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L890)
+[src/sdk/models.ts:1078](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1078)
 
 ***
 
@@ -180,7 +180,7 @@ true
 
 #### Defined in
 
-[src/sdk/models.ts:912](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L912)
+[src/sdk/models.ts:1100](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1100)
 
 ***
 
@@ -198,7 +198,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:936](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L936)
+[src/sdk/models.ts:1124](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1124)
 
 ***
 
@@ -218,7 +218,7 @@ Also used in [code formatting](https://livecodes.io/docs/features/code-format).
 
 #### Defined in
 
-[src/sdk/models.ts:906](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L906)
+[src/sdk/models.ts:1094](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1094)
 
 ***
 
@@ -236,7 +236,7 @@ Sets the app [theme](https://livecodes.io/docs/features/themes) to light/dark mo
 
 #### Defined in
 
-[src/sdk/models.ts:857](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L857)
+[src/sdk/models.ts:1045](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1045)
 
 ***
 
@@ -255,7 +255,7 @@ undefined
 
 #### Defined in
 
-[src/sdk/models.ts:864](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L864)
+[src/sdk/models.ts:1052](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1052)
 
 ***
 
@@ -275,7 +275,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:898](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L898)
+[src/sdk/models.ts:1086](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1086)
 
 ***
 
@@ -293,4 +293,4 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:918](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L918)
+[src/sdk/models.ts:1106](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1106)

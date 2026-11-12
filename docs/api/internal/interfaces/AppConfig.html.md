@@ -22,13 +22,31 @@ true
 
 #### Defined in
 
-[src/sdk/models.ts:1037](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1037)
+[src/sdk/models.ts:1225](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1225)
+
+***
+
+### disableHomeLink
+
+> **disableHomeLink**: `boolean`
+
+If `true`, the link on LiveCodes logo ("Edit on LiveCodes") is disabled in [embeds](https://livecodes.io/docs/features/embeds).
+
+#### Default
+
+```ts
+false
+```
+
+#### Defined in
+
+[src/sdk/models.ts:1269](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1269)
 
 ***
 
 ### mode
 
-> **mode**: `"editor"` \| `"result"` \| `"full"` \| `"focus"` \| `"lite"` \| `"simple"` \| `"codeblock"`
+> **mode**: `"editor"` \| `"result"` \| `"full"` \| `"focus"` \| `"lite"` \| `"simple"` \| `"console"` \| `"codeblock"`
 
 Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
@@ -40,7 +58,7 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 #### Defined in
 
-[src/sdk/models.ts:1049](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1049)
+[src/sdk/models.ts:1237](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1237)
 
 ***
 
@@ -61,7 +79,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:1031](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1031)
+[src/sdk/models.ts:1219](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1219)
 
 ***
 
@@ -79,7 +97,7 @@ Sets enabled and active tools and status of [tools pane](https://livecodes.io/do
 
 ##### enabled
 
-> **enabled**: [`ToolName`](../type-aliases/ToolName.md)[] \| `"all"`
+> **enabled**: ([`ToolName`](../type-aliases/ToolName.md) \| `"zoom"`)[] \| `"all"`
 
 ##### status
 
@@ -105,7 +123,7 @@ Sets enabled and active tools and status of [tools pane](https://livecodes.io/do
 
 #### Defined in
 
-[src/sdk/models.ts:1065](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1065)
+[src/sdk/models.ts:1253](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1253)
 
 ***
 
@@ -123,7 +141,7 @@ Sets the [default view](https://livecodes.io/docs/features/default-view) for the
 
 #### Defined in
 
-[src/sdk/models.ts:1043](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1043)
+[src/sdk/models.ts:1231](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1231)
 
 ***
 
@@ -135,4 +153,4 @@ Sets result page [zoom level](https://livecodes.io/docs/features/result#result-p
 
 #### Defined in
 
-[src/sdk/models.ts:1074](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1074)
+[src/sdk/models.ts:1262](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1262)

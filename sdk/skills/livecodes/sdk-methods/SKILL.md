@@ -1,13 +1,14 @@
 ---
-name: livecodes/sdk-methods
+name: sdk-methods
 description: >
   Use SDK methods to interact with playgrounds: run, getCode, setConfig, getConfig,
   watch, runTests, format, getShareUrl, show, destroy. Load this skill when
   programmatically controlling embedded playgrounds, reacting to code changes,
   or retrieving compiled output.
-type: core
-library: livecodes
-library_version: 0.13.0
+metadata:
+  type: core
+  library: livecodes
+  library_version: 0.13.0
 requires:
   - sdk-embedding
 sources:
@@ -88,6 +89,11 @@ const codeWatcher = playground.watch('code', ({ code, config }) => {
   console.log('Code changed:', code.script.content);
 });
 
+// Watch for code execution
+const runWatcher = playground.watch('run', ({ code, config }) => {
+  console.log('Playground ran. Result HTML:', code.result);
+});
+
 // Watch for console output
 const consoleWatcher = playground.watch('console', ({ method, args }) => {
   console[method](...args);
@@ -100,7 +106,9 @@ const testsWatcher = playground.watch('tests', ({ results, error }) => {
 
 // Remove watchers when done
 codeWatcher.remove();
+runWatcher.remove();
 consoleWatcher.remove();
+testsWatcher.remove();
 ```
 
 ### Run tests programmatically
@@ -217,6 +225,11 @@ playground.watch('code', ({ code, config }) => {
   console.log(code.markup.content);
   console.log(code.style.content);
   console.log(code.script.content);
+  console.log(code.result); // Result page HTML
+});
+
+// 'run' event provides { code, config }
+playground.watch('run', ({ code, config }) => {
   console.log(code.result); // Result page HTML
 });
 

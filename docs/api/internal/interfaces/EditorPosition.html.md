@@ -13,7 +13,7 @@ with 1-based line number and (optional) 1-based column number.
 
 #### Defined in
 
-[src/sdk/models.ts:261](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L261)
+[src/sdk/models.ts:398](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L398)
 
 ***
 
@@ -25,4 +25,4 @@ with 1-based line number and (optional) 1-based column number.
 
 #### Defined in
 
-[src/sdk/models.ts:258](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L258)
+[src/sdk/models.ts:395](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L395)

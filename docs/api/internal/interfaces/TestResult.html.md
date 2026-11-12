@@ -12,7 +12,7 @@ Time taken to run the test in milliseconds.
 
 #### Defined in
 
-[src/sdk/models.ts:653](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L653)
+[src/sdk/models.ts:828](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L828)
 
 ***
 
@@ -24,7 +24,7 @@ Array of error messages if the test failed.
 
 #### Defined in
 
-[src/sdk/models.ts:655](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L655)
+[src/sdk/models.ts:830](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L830)
 
 ***
 
@@ -36,7 +36,7 @@ The status of the test.
 
 #### Defined in
 
-[src/sdk/models.ts:657](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L657)
+[src/sdk/models.ts:832](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L832)
 
 ***
 
@@ -48,4 +48,4 @@ The path to the test in the test suite.
 
 #### Defined in
 
-[src/sdk/models.ts:659](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L659)
+[src/sdk/models.ts:834](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L834)

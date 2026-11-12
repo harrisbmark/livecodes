@@ -23,7 +23,7 @@ If supplied with an invalid URL, an error is thrown.
 
 #### Defined in
 
-[src/sdk/models.ts:1697](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1697)
+[src/sdk/models.ts:1897](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1897)
 
 ***
 
@@ -43,7 +43,7 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 #### Defined in
 
-[src/sdk/models.ts:1729](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1729)
+[src/sdk/models.ts:1929](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1929)
 
 ***
 
@@ -61,7 +61,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:1735](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1735)
+[src/sdk/models.ts:1935](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1935)
 
 ***
 
@@ -73,7 +73,7 @@ A resource to [import](https://livecodes.io/docs/features/import) (from any of t
 
 #### Defined in
 
-[src/sdk/models.ts:1740](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1740)
+[src/sdk/models.ts:1940](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1940)
 
 ***
 
@@ -95,7 +95,7 @@ false
 
 #### Defined in
 
-[src/sdk/models.ts:1751](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1751)
+[src/sdk/models.ts:1951](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1951)
 
 ***
 
@@ -117,7 +117,7 @@ Sets how the playground loads:
 
 #### Defined in
 
-[src/sdk/models.ts:1761](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1761)
+[src/sdk/models.ts:1961](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1961)
 
 ***
 
@@ -154,6 +154,30 @@ createPlayground('#container', { params: { md: '# Hello World!' } });
 
 > `optional` **activeEditor**: `0` \| [`EditorId`](../internal/type-aliases/EditorId.md) \| `1` \| `2`
 
+#### ada
+
+> **ada**: `undefined` \| `string`
+
+#### ada-selector
+
+> **ada-selector**: `undefined` \| `string`
+
+#### ada-wasm
+
+> **ada-wasm**: `undefined` \| `string`
+
+#### ada-wasm-selector
+
+> **ada-wasm-selector**: `undefined` \| `string`
+
+#### adb
+
+> **adb**: `undefined` \| `string`
+
+#### adb-selector
+
+> **adb-selector**: `undefined` \| `string`
+
 #### adoc
 
 > **adoc**: `undefined` \| `string`
@@ -161,6 +185,14 @@ createPlayground('#container', { params: { md: '# Hello World!' } });
 #### adoc-selector
 
 > **adoc-selector**: `undefined` \| `string`
+
+#### ads
+
+> **ads**: `undefined` \| `string`
+
+#### ads-selector
+
+> **ads-selector**: `undefined` \| `string`
 
 #### allowLangChange?
 
@@ -251,6 +283,38 @@ If supplied with an invalid URL, an error is thrown.
 
 > **asciidoc-selector**: `undefined` \| `string`
 
+#### asm
+
+> **asm**: `undefined` \| `string`
+
+#### asm-selector
+
+> **asm-selector**: `undefined` \| `string`
+
+#### asm-wasm
+
+> **asm-wasm**: `undefined` \| `string`
+
+#### asm-wasm-selector
+
+> **asm-wasm-selector**: `undefined` \| `string`
+
+#### assembly
+
+> **assembly**: `undefined` \| `string`
+
+#### assembly-selector
+
+> **assembly-selector**: `undefined` \| `string`
+
+#### assembly-wasm
+
+> **assembly-wasm**: `undefined` \| `string`
+
+#### assembly-wasm-selector
+
+> **assembly-wasm-selector**: `undefined` \| `string`
+
 #### assemblyscript
 
 > **assemblyscript**: `undefined` \| `string`
@@ -337,6 +401,22 @@ true
 
 > **Binary-selector**: `undefined` \| `string`
 
+#### blazor
+
+> **blazor**: `undefined` \| `string`
+
+#### blazor-selector
+
+> **blazor-selector**: `undefined` \| `string`
+
+#### blazor-wasm
+
+> **blazor-wasm**: `undefined` \| `string`
+
+#### blazor-wasm-selector
+
+> **blazor-wasm-selector**: `undefined` \| `string`
+
 #### blockly
 
 > **blockly**: `undefined` \| `string`
@@ -369,6 +449,14 @@ true
 
 > **C-selector**: `undefined` \| `string`
 
+#### c-wasm
+
+> **c-wasm**: `undefined` \| `string`
+
+#### c-wasm-selector
+
+> **c-wasm-selector**: `undefined` \| `string`
+
 #### c++
 
 > **c++**: `undefined` \| `string`
@@ -376,6 +464,22 @@ true
 #### c++-selector
 
 > **c++-selector**: `undefined` \| `string`
+
+#### cbl
+
+> **cbl**: `undefined` \| `string`
+
+#### cbl-selector
+
+> **cbl-selector**: `undefined` \| `string`
+
+#### cc
+
+> **cc**: `undefined` \| `string`
+
+#### cc-selector
+
+> **cc-selector**: `undefined` \| `string`
 
 #### civet
 
@@ -389,9 +493,49 @@ true
 
 > **clang**: `undefined` \| `string`
 
+#### clang-c
+
+> **clang-c**: `undefined` \| `string`
+
+#### clang-c-selector
+
+> **clang-c-selector**: `undefined` \| `string`
+
+#### clang-cpp
+
+> **clang-cpp**: `undefined` \| `string`
+
+#### clang-cpp-selector
+
+> **clang-cpp-selector**: `undefined` \| `string`
+
+#### clang-objc
+
+> **clang-objc**: `undefined` \| `string`
+
+#### clang-objc-selector
+
+> **clang-objc-selector**: `undefined` \| `string`
+
+#### clang-objcpp
+
+> **clang-objcpp**: `undefined` \| `string`
+
+#### clang-objcpp-selector
+
+> **clang-objcpp-selector**: `undefined` \| `string`
+
 #### clang-selector
 
 > **clang-selector**: `undefined` \| `string`
+
+#### clang.c
+
+> **c**: `undefined` \| `string`
+
+#### clang.c-selector
+
+> **c-selector**: `undefined` \| `string`
 
 #### clang.cpp
 
@@ -400,6 +544,22 @@ true
 #### clang.cpp-selector
 
 > **cpp-selector**: `undefined` \| `string`
+
+#### clang.m
+
+> **m**: `undefined` \| `string`
+
+#### clang.m-selector
+
+> **m-selector**: `undefined` \| `string`
+
+#### clang.mm
+
+> **mm**: `undefined` \| `string`
+
+#### clang.mm-selector
+
+> **mm-selector**: `undefined` \| `string`
 
 #### clio
 
@@ -429,9 +589,25 @@ true
 
 > **cljs**: `undefined` \| `string`
 
+#### cljs-cherry
+
+> **cljs-cherry**: `undefined` \| `string`
+
+#### cljs-cherry-selector
+
+> **cljs-cherry-selector**: `undefined` \| `string`
+
 #### cljs-selector
 
 > **cljs-selector**: `undefined` \| `string`
+
+#### cljs-selfhosted
+
+> **cljs-selfhosted**: `undefined` \| `string`
+
+#### cljs-selfhosted-selector
+
+> **cljs-selfhosted-selector**: `undefined` \| `string`
 
 #### clojure
 
@@ -445,9 +621,25 @@ true
 
 > **clojurescript**: `undefined` \| `string`
 
+#### clojurescript-cherry
+
+> **clojurescript-cherry**: `undefined` \| `string`
+
+#### clojurescript-cherry-selector
+
+> **clojurescript-cherry-selector**: `undefined` \| `string`
+
 #### clojurescript-selector
 
 > **clojurescript-selector**: `undefined` \| `string`
+
+#### clojurescript-selfhosted
+
+> **clojurescript-selfhosted**: `undefined` \| `string`
+
+#### clojurescript-selfhosted-selector
+
+> **clojurescript-selfhosted-selector**: `undefined` \| `string`
 
 #### closeBrackets?
 
@@ -460,6 +652,30 @@ Use auto-complete to close brackets and quotes.
 ```ts
 true
 ```
+
+#### cob
+
+> **cob**: `undefined` \| `string`
+
+#### cob-selector
+
+> **cob-selector**: `undefined` \| `string`
+
+#### cobol
+
+> **cobol**: `undefined` \| `string`
+
+#### cobol-selector
+
+> **cobol-selector**: `undefined` \| `string`
+
+#### cobol-wasm
+
+> **cobol-wasm**: `undefined` \| `string`
+
+#### cobol-wasm-selector
+
+> **cobol-wasm-selector**: `undefined` \| `string`
 
 #### coffee
 
@@ -555,6 +771,38 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 > **cppwasm-selector**: `undefined` \| `string`
 
+#### cpy
+
+> **cpy**: `undefined` \| `string`
+
+#### cpy-selector
+
+> **cpy-selector**: `undefined` \| `string`
+
+#### cr
+
+> **cr**: `undefined` \| `string`
+
+#### cr-selector
+
+> **cr-selector**: `undefined` \| `string`
+
+#### crystal
+
+> **crystal**: `undefined` \| `string`
+
+#### crystal-selector
+
+> **crystal-selector**: `undefined` \| `string`
+
+#### crystal-wasm
+
+> **crystal-wasm**: `undefined` \| `string`
+
+#### crystal-wasm-selector
+
+> **crystal-wasm-selector**: `undefined` \| `string`
+
 #### cs
 
 > **cs**: `undefined` \| `string`
@@ -607,9 +855,25 @@ If supplied and is not an object or a valid URL, an error is thrown.
 
 Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) for the current project.
 
+#### customSettings.ada
+
+> **ada**: `any`
+
+#### customSettings.ada-wasm
+
+> **ada-wasm**: `any`
+
+#### customSettings.adb
+
+> **adb**: `any`
+
 #### customSettings.adoc
 
 > **adoc**: `any`
+
+#### customSettings.ads
+
+> **ads**: `any`
 
 #### customSettings.app.svelte
 
@@ -639,6 +903,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **asciidoc**: `any`
 
+#### customSettings.asm
+
+> **asm**: `any`
+
+#### customSettings.asm-wasm
+
+> **asm-wasm**: `any`
+
+#### customSettings.assembly
+
+> **assembly**: `any`
+
+#### customSettings.assembly-wasm
+
+> **assembly-wasm**: `any`
+
 #### customSettings.assemblyscript
 
 > **assemblyscript**: `any`
@@ -667,6 +947,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **Binary**: `any`
 
+#### customSettings.blazor
+
+> **blazor**: `any`
+
+#### customSettings.blazor-wasm
+
+> **blazor-wasm**: `any`
+
 #### customSettings.blockly
 
 > **blockly**: `any`
@@ -683,9 +971,21 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **C**: `any`
 
+#### customSettings.c-wasm
+
+> **c-wasm**: `any`
+
 #### customSettings.c++
 
 > **c++**: `any`
+
+#### customSettings.cbl
+
+> **cbl**: `any`
+
+#### customSettings.cc
+
+> **cc**: `any`
 
 #### customSettings.civet
 
@@ -695,9 +995,37 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **clang**: `any`
 
+#### customSettings.clang-c
+
+> **clang-c**: `any`
+
+#### customSettings.clang-cpp
+
+> **clang-cpp**: `any`
+
+#### customSettings.clang-objc
+
+> **clang-objc**: `any`
+
+#### customSettings.clang-objcpp
+
+> **clang-objcpp**: `any`
+
+#### customSettings.clang.c
+
+> **c**: `any`
+
 #### customSettings.clang.cpp
 
 > **cpp**: `any`
+
+#### customSettings.clang.m
+
+> **m**: `any`
+
+#### customSettings.clang.mm
+
+> **mm**: `any`
 
 #### customSettings.clio
 
@@ -715,6 +1043,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cljs**: `any`
 
+#### customSettings.cljs-cherry
+
+> **cljs-cherry**: `any`
+
+#### customSettings.cljs-selfhosted
+
+> **cljs-selfhosted**: `any`
+
 #### customSettings.clojure
 
 > **clojure**: `any`
@@ -722,6 +1058,26 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.clojurescript
 
 > **clojurescript**: `any`
+
+#### customSettings.clojurescript-cherry
+
+> **clojurescript-cherry**: `any`
+
+#### customSettings.clojurescript-selfhosted
+
+> **clojurescript-selfhosted**: `any`
+
+#### customSettings.cob
+
+> **cob**: `any`
+
+#### customSettings.cobol
+
+> **cobol**: `any`
+
+#### customSettings.cobol-wasm
+
+> **cobol-wasm**: `any`
 
 #### customSettings.coffee
 
@@ -763,6 +1119,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cppwasm**: `any`
 
+#### customSettings.cpy
+
+> **cpy**: `any`
+
+#### customSettings.cr
+
+> **cr**: `any`
+
+#### customSettings.crystal
+
+> **crystal**: `any`
+
+#### customSettings.crystal-wasm
+
+> **crystal-wasm**: `any`
+
 #### customSettings.cs
 
 > **cs**: `any`
@@ -799,9 +1171,29 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cxx**: `any`
 
+#### customSettings.d
+
+> **d**: `any`
+
+#### customSettings.d-wasm
+
+> **d-wasm**: `any`
+
+#### customSettings.dart
+
+> **dart**: `any`
+
+#### customSettings.dartlang
+
+> **dartlang**: `any`
+
 #### customSettings.defaultCDN?
 
 > `optional` **defaultCDN**: [`CDN`](../internal/type-aliases/CDN.md)
+
+#### customSettings.di
+
+> **di**: `any`
 
 #### customSettings.diagram
 
@@ -811,9 +1203,25 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **diagrams**: `any`
 
+#### customSettings.dlang
+
+> **dlang**: `any`
+
+#### customSettings.dmd
+
+> **dmd**: `any`
+
 #### customSettings.dot
 
 > **dot**: `any`
+
+#### customSettings.duckdb
+
+> **duckdb**: `any`
+
+#### customSettings.duckdb.sql
+
+> **sql**: `any`
 
 #### customSettings.dzn
 
@@ -827,6 +1235,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **ejs**: `any`
 
+#### customSettings.elm
+
+> **elm**: `any`
+
 #### customSettings.es
 
 > **es**: `any`
@@ -834,6 +1246,30 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.eta
 
 > **eta**: `any`
+
+#### customSettings.f
+
+> **f**: `any`
+
+#### customSettings.f03
+
+> **f03**: `any`
+
+#### customSettings.f08
+
+> **f08**: `any`
+
+#### customSettings.f90
+
+> **f90**: `any`
+
+#### customSettings.f95
+
+> **f95**: `any`
+
+#### customSettings.fanak
+
+> **fanak**: `any`
 
 #### customSettings.fennel
 
@@ -843,13 +1279,61 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **flow**: `any`
 
+#### customSettings.flutter
+
+> **flutter**: `any`
+
+#### customSettings.fnk
+
+> **fnk**: `any`
+
 #### customSettings.fnl
 
 > **fnl**: `any`
 
+#### customSettings.for
+
+> **for**: `any`
+
+#### customSettings.fortran
+
+> **fortran**: `any`
+
+#### customSettings.fortran-wasm
+
+> **fortran-wasm**: `any`
+
+#### customSettings.fs
+
+> **fs**: `any`
+
+#### customSettings.fs-wasm
+
+> **fs-wasm**: `any`
+
+#### customSettings.fsharp
+
+> **fsharp**: `any`
+
+#### customSettings.fsharp-wasm
+
+> **fsharp-wasm**: `any`
+
+#### customSettings.fsx
+
+> **fsx**: `any`
+
+#### customSettings.ftn
+
+> **ftn**: `any`
+
 #### customSettings.gleam
 
 > **gleam**: `any`
+
+#### customSettings.gnucobol
+
+> **gnucobol**: `any`
 
 #### customSettings.go
 
@@ -875,6 +1359,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **h**: `any`
 
+#### customSettings.hac
+
+> **hac**: `any`
+
 #### customSettings.haml
 
 > **haml**: `any`
@@ -883,6 +1371,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **handlebars**: `any`
 
+#### customSettings.haskell
+
+> **haskell**: `any`
+
+#### customSettings.haskell-wasm
+
+> **haskell-wasm**: `any`
+
 #### customSettings.hbs
 
 > **hbs**: `any`
@@ -890,6 +1386,18 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.hpp
 
 > **hpp**: `any`
+
+#### customSettings.hs
+
+> **hs**: `any`
+
+#### customSettings.hs-wasm
+
+> **hs-wasm**: `any`
+
+#### customSettings.hswasm
+
+> **hswasm**: `any`
 
 #### customSettings.htm
 
@@ -919,9 +1427,29 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **jade**: `any`
 
+#### customSettings.janet
+
+> **janet**: `any`
+
+#### customSettings.janet-wasm
+
+> **janet-wasm**: `any`
+
 #### customSettings.java
 
 > **java**: `any`
+
+#### customSettings.java-8
+
+> **java-8**: `any`
+
+#### customSettings.java-wasm
+
+> **java-wasm**: `any`
+
+#### customSettings.java8
+
+> **java8**: `any`
 
 #### customSettings.javascript
 
@@ -939,6 +1467,18 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **js**: `any`
 
+#### customSettings.js.ml
+
+> **ml**: `any`
+
+#### customSettings.js.nim
+
+> **nim**: `any`
+
+#### customSettings.js.ocaml
+
+> **ocaml**: `any`
+
 #### customSettings.json
 
 > **json**: `any`
@@ -954,6 +1494,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.less
 
 > **less**: `any`
+
+#### customSettings.lfortran
+
+> **lfortran**: `any`
+
+#### customSettings.lhs
+
+> **lhs**: `any`
 
 #### customSettings.lightningcss
 
@@ -990,6 +1538,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.luawasm
 
 > **luawasm**: `any`
+
+#### customSettings.m
+
+> **m**: `any`
 
 #### customSettings.malina
 
@@ -1043,6 +1595,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **mli**: `any`
 
+#### customSettings.mm
+
+> **mm**: `any`
+
 #### customSettings.mts
 
 > **mts**: `any`
@@ -1055,6 +1611,34 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **mzn**: `any`
 
+#### customSettings.nasm
+
+> **nasm**: `any`
+
+#### customSettings.nim
+
+> **nim**: `any`
+
+#### customSettings.nim-js
+
+> **nim-js**: `any`
+
+#### customSettings.nim-wasm
+
+> **nim-wasm**: `any`
+
+#### customSettings.nimble
+
+> **nimble**: `any`
+
+#### customSettings.nims
+
+> **nims**: `any`
+
+#### customSettings.nimwasm
+
+> **nimwasm**: `any`
+
 #### customSettings.njk
 
 > **njk**: `any`
@@ -1063,9 +1647,61 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **nunjucks**: `any`
 
+#### customSettings.objc
+
+> **objc**: `any`
+
+#### customSettings.objc-wasm
+
+> **objc-wasm**: `any`
+
+#### customSettings.objc++
+
+> **objc++**: `any`
+
+#### customSettings.objcpp
+
+> **objcpp**: `any`
+
+#### customSettings.objcpp-wasm
+
+> **objcpp-wasm**: `any`
+
+#### customSettings.objective-c
+
+> **objective-c**: `any`
+
+#### customSettings.objective-c++
+
+> **objective-c++**: `any`
+
 #### customSettings.ocaml
 
 > **ocaml**: `any`
+
+#### customSettings.ocaml-js
+
+> **ocaml-js**: `any`
+
+#### customSettings.odin
+
+> **odin**: `any`
+
+#### customSettings.odin-wasm
+
+> **odin-wasm**: `any`
+
+#### customSettings.pas
+
+> **pas**: `any`
+
+#### customSettings.pas2js
+
+> **pas2js**: `any`
+
+#### customSettings.pascal
+
+> **pascal**: `any`
 
 #### customSettings.perl
 
@@ -1151,6 +1787,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **sql**: `any`
 
+#### customSettings.pp
+
+> **pp**: `any`
+
 #### customSettings.prolog
 
 > **prolog**: `any`
@@ -1206,6 +1846,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.r-wasm
 
 > **r-wasm**: `any`
+
+#### customSettings.razor
+
+> **razor**: `any`
+
+#### customSettings.razor-wasm
+
+> **razor-wasm**: `any`
 
 #### customSettings.rb
 
@@ -1267,6 +1915,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rescript**: `any`
 
+#### customSettings.rescript-ocaml
+
+> **rescript-ocaml**: `any`
+
 #### customSettings.resi
 
 > **resi**: `any`
@@ -1299,6 +1951,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rlang**: `any`
 
+#### customSettings.rs
+
+> **rs**: `any`
+
+#### customSettings.rs-wasm
+
+> **rs-wasm**: `any`
+
 #### customSettings.rstats
 
 > **rstats**: `any`
@@ -1323,9 +1983,25 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **rubywasm**: `any`
 
+#### customSettings.rust
+
+> **rust**: `any`
+
+#### customSettings.rust-wasm
+
+> **rust-wasm**: `any`
+
 #### customSettings.sass
 
 > **sass**: `any`
+
+#### customSettings.scala
+
+> **scala**: `any`
+
+#### customSettings.scala-wasm
+
+> **scala-wasm**: `any`
 
 #### customSettings.scheme
 
@@ -1337,7 +2013,7 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 #### customSettings.scriptType?
 
-> `optional` **scriptType**: `""` \| `"module"` \| `"application/javascript"` \| `"application/ecmascript"` \| `"text/javascript"` \| `"text/ecmascript"` \| `"text/liquid"` \| `"text/python"` \| `"text/r"` \| `"text/ruby-wasm"` \| `"text/x-uniter-php"` \| `"text/php-wasm"` \| `"text/cpp"` \| `"text/java"` \| `"text/csharp-wasm"` \| `"text/perl"` \| `"text/julia"` \| `"text/biwascheme"` \| `"text/commonlisp"` \| `"text/tcl"` \| `"text/prolog"` \| `"text/minizinc"` \| `"text/go-wasm"` \| `"application/json"` \| `"application/lua"` \| `"text/fennel"` \| `"application/wasm-uint8"`
+> `optional` **scriptType**: `""` \| `"module"` \| `"application/javascript"` \| `"application/ecmascript"` \| `"text/javascript"` \| `"text/ecmascript"` \| `"text/liquid"` \| `"text/python"` \| `"text/r"` \| `"text/ruby-wasm"` \| `"text/scala-wasm"` \| `"text/x-uniter-php"` \| `"text/php-wasm"` \| `"text/c-wasm"` \| `"text/cpp"` \| `"text/cpp-wasm"` \| `"text/objc-wasm"` \| `"text/objcpp-wasm"` \| `"text/nim-wasm"` \| `"text/java"` \| `"text/csharp-wasm"` \| `"text/razor"` \| `"text/fanak"` \| `"text/vb-wasm"` \| `"text/perl"` \| `"text/julia"` \| `"text/biwascheme"` \| `"text/commonlisp"` \| `"text/tcl"` \| `"text/prolog"` \| `"text/haskell"` \| `"text/haskell-wasm"` \| `"text/minizinc"` \| `"text/go-wasm"` \| `"text/zig-wasm"` \| `"text/v-wasm"` \| `"application/json"` \| `"application/lua"` \| `"text/fennel"` \| `"application/wasm-uint8"`
 
 #### customSettings.scss
 
@@ -1403,6 +2079,10 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **swift**: `any`
 
+#### customSettings.swift-wasm
+
+> **swift-wasm**: `any`
+
 #### customSettings.tailwindcss
 
 > **tailwindcss**: `any`
@@ -1459,9 +2139,37 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **unocss**: `any`
 
+#### customSettings.v
+
+> **v**: `any`
+
+#### customSettings.v-wasm
+
+> **v-wasm**: `any`
+
+#### customSettings.vb
+
+> **vb**: `any`
+
+#### customSettings.vb-wasm
+
+> **vb-wasm**: `any`
+
+#### customSettings.vbnet
+
+> **vbnet**: `any`
+
 #### customSettings.vento
 
 > **vento**: `any`
+
+#### customSettings.vlang
+
+> **vlang**: `any`
+
+#### customSettings.vsh
+
+> **vsh**: `any`
 
 #### customSettings.vto
 
@@ -1487,6 +2195,22 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **wasm**: `any`
 
+#### customSettings.wasm.ada
+
+> **ada**: `any`
+
+#### customSettings.wasm.asm
+
+> **asm**: `any`
+
+#### customSettings.wasm.c
+
+> **c**: `any`
+
+#### customSettings.wasm.cobol
+
+> **cobol**: `any`
+
 #### customSettings.wasm.cpp
 
 > **cpp**: `any`
@@ -1495,13 +2219,41 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **cs**: `any`
 
+#### customSettings.wasm.fs
+
+> **fs**: `any`
+
+#### customSettings.wasm.fsx
+
+> **fsx**: `any`
+
 #### customSettings.wasm.go
 
 > **go**: `any`
 
+#### customSettings.wasm.hs
+
+> **hs**: `any`
+
+#### customSettings.wasm.janet
+
+> **janet**: `any`
+
 #### customSettings.wasm.lua
 
 > **lua**: `any`
+
+#### customSettings.wasm.m
+
+> **m**: `any`
+
+#### customSettings.wasm.mm
+
+> **mm**: `any`
+
+#### customSettings.wasm.nim
+
+> **nim**: `any`
 
 #### customSettings.wasm.php
 
@@ -1511,9 +2263,33 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **py**: `any`
 
+#### customSettings.wasm.razor
+
+> **razor**: `any`
+
 #### customSettings.wasm.rb
 
 > **rb**: `any`
+
+#### customSettings.wasm.rs
+
+> **rs**: `any`
+
+#### customSettings.wasm.scala
+
+> **scala**: `any`
+
+#### customSettings.wasm.swift
+
+> **swift**: `any`
+
+#### customSettings.wasm.v
+
+> **v**: `any`
+
+#### customSettings.wasm.vb
+
+> **vb**: `any`
 
 #### customSettings.wast
 
@@ -1531,6 +2307,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 
 > **windicss**: `any`
 
+#### customSettings.x86
+
+> **x86**: `any`
+
+#### customSettings.x86-64
+
+> **x86-64**: `any`
+
 #### customSettings.xht
 
 > **xht**: `any`
@@ -1538,6 +2322,14 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### customSettings.xml
 
 > **xml**: `any`
+
+#### customSettings.zig
+
+> **zig**: `any`
+
+#### customSettings.zig-wasm
+
+> **zig-wasm**: `any`
 
 #### cwasm
 
@@ -1554,6 +2346,38 @@ Defines [custom settings](https://livecodes.io/docs/advanced/custom-settings) fo
 #### cxx-selector
 
 > **cxx-selector**: `undefined` \| `string`
+
+#### d
+
+> **d**: `undefined` \| `string`
+
+#### d-selector
+
+> **d-selector**: `undefined` \| `string`
+
+#### d-wasm
+
+> **d-wasm**: `undefined` \| `string`
+
+#### d-wasm-selector
+
+> **d-wasm-selector**: `undefined` \| `string`
+
+#### dart
+
+> **dart**: `undefined` \| `string`
+
+#### dart-selector
+
+> **dart-selector**: `undefined` \| `string`
+
+#### dartlang
+
+> **dartlang**: `undefined` \| `string`
+
+#### dartlang-selector
+
+> **dartlang-selector**: `undefined` \| `string`
 
 #### delay?
 
@@ -1582,6 +2406,14 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 ""
 ```
 
+#### di
+
+> **di**: `undefined` \| `string`
+
+#### di-selector
+
+> **di-selector**: `undefined` \| `string`
+
 #### diagram
 
 > **diagram**: `undefined` \| `string`
@@ -1602,6 +2434,34 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 
 > `optional` **disableAI**: `boolean`
 
+#### disableHomeLink?
+
+> `optional` **disableHomeLink**: `boolean`
+
+If `true`, the link on LiveCodes logo ("Edit on LiveCodes") is disabled in [embeds](https://livecodes.io/docs/features/embeds).
+
+##### Default
+
+```ts
+false
+```
+
+#### dlang
+
+> **dlang**: `undefined` \| `string`
+
+#### dlang-selector
+
+> **dlang-selector**: `undefined` \| `string`
+
+#### dmd
+
+> **dmd**: `undefined` \| `string`
+
+#### dmd-selector
+
+> **dmd-selector**: `undefined` \| `string`
+
 #### dot
 
 > **dot**: `undefined` \| `string`
@@ -1609,6 +2469,22 @@ and [result page](https://livecodes.io/docs/features/result) description meta ta
 #### dot-selector
 
 > **dot-selector**: `undefined` \| `string`
+
+#### duckdb
+
+> **duckdb**: `undefined` \| `string`
+
+#### duckdb-selector
+
+> **duckdb-selector**: `undefined` \| `string`
+
+#### duckdb.sql
+
+> **sql**: `undefined` \| `string`
+
+#### duckdb.sql-selector
+
+> **sql-selector**: `undefined` \| `string`
 
 #### dzn
 
@@ -1688,6 +2564,14 @@ See docs for [editor themes](https://livecodes.io/docs/configuration/configurati
 
 > **ejs-selector**: `undefined` \| `string`
 
+#### elm
+
+> **elm**: `undefined` \| `string`
+
+#### elm-selector
+
+> **elm-selector**: `undefined` \| `string`
+
 #### embed?
 
 > `optional` **embed**: `boolean`
@@ -1720,6 +2604,54 @@ true
 
 > **eta-selector**: `undefined` \| `string`
 
+#### f
+
+> **f**: `undefined` \| `string`
+
+#### f-selector
+
+> **f-selector**: `undefined` \| `string`
+
+#### f03
+
+> **f03**: `undefined` \| `string`
+
+#### f03-selector
+
+> **f03-selector**: `undefined` \| `string`
+
+#### f08
+
+> **f08**: `undefined` \| `string`
+
+#### f08-selector
+
+> **f08-selector**: `undefined` \| `string`
+
+#### f90
+
+> **f90**: `undefined` \| `string`
+
+#### f90-selector
+
+> **f90-selector**: `undefined` \| `string`
+
+#### f95
+
+> **f95**: `undefined` \| `string`
+
+#### f95-selector
+
+> **f95-selector**: `undefined` \| `string`
+
+#### fanak
+
+> **fanak**: `undefined` \| `string`
+
+#### fanak-selector
+
+> **fanak-selector**: `undefined` \| `string`
+
 #### fennel
 
 > **fennel**: `undefined` \| `string`
@@ -1739,6 +2671,22 @@ true
 #### flow-selector
 
 > **flow-selector**: `undefined` \| `string`
+
+#### flutter
+
+> **flutter**: `undefined` \| `string`
+
+#### flutter-selector
+
+> **flutter-selector**: `undefined` \| `string`
+
+#### fnk
+
+> **fnk**: `undefined` \| `string`
+
+#### fnk-selector
+
+> **fnk-selector**: `undefined` \| `string`
 
 #### fnl
 
@@ -1780,6 +2728,14 @@ If `undefined` (the default), the font size is set to 14 for the full app and 12
 undefined
 ```
 
+#### for
+
+> **for**: `undefined` \| `string`
+
+#### for-selector
+
+> **for-selector**: `undefined` \| `string`
+
 #### formatOnsave?
 
 > `optional` **formatOnsave**: `boolean`
@@ -1792,6 +2748,70 @@ If `true`, the code is automatically [formatted](https://livecodes.io/docs/featu
 false
 ```
 
+#### fortran
+
+> **fortran**: `undefined` \| `string`
+
+#### fortran-selector
+
+> **fortran-selector**: `undefined` \| `string`
+
+#### fortran-wasm
+
+> **fortran-wasm**: `undefined` \| `string`
+
+#### fortran-wasm-selector
+
+> **fortran-wasm-selector**: `undefined` \| `string`
+
+#### fs
+
+> **fs**: `undefined` \| `string`
+
+#### fs-selector
+
+> **fs-selector**: `undefined` \| `string`
+
+#### fs-wasm
+
+> **fs-wasm**: `undefined` \| `string`
+
+#### fs-wasm-selector
+
+> **fs-wasm-selector**: `undefined` \| `string`
+
+#### fsharp
+
+> **fsharp**: `undefined` \| `string`
+
+#### fsharp-selector
+
+> **fsharp-selector**: `undefined` \| `string`
+
+#### fsharp-wasm
+
+> **fsharp-wasm**: `undefined` \| `string`
+
+#### fsharp-wasm-selector
+
+> **fsharp-wasm-selector**: `undefined` \| `string`
+
+#### fsx
+
+> **fsx**: `undefined` \| `string`
+
+#### fsx-selector
+
+> **fsx-selector**: `undefined` \| `string`
+
+#### ftn
+
+> **ftn**: `undefined` \| `string`
+
+#### ftn-selector
+
+> **ftn-selector**: `undefined` \| `string`
+
 #### gleam
 
 > **gleam**: `undefined` \| `string`
@@ -1799,6 +2819,14 @@ false
 #### gleam-selector
 
 > **gleam-selector**: `undefined` \| `string`
+
+#### gnucobol
+
+> **gnucobol**: `undefined` \| `string`
+
+#### gnucobol-selector
+
+> **gnucobol-selector**: `undefined` \| `string`
 
 #### go
 
@@ -1848,6 +2876,14 @@ false
 
 > **h-selector**: `undefined` \| `string`
 
+#### hac
+
+> **hac**: `undefined` \| `string`
+
+#### hac-selector
+
+> **hac-selector**: `undefined` \| `string`
+
 #### haml
 
 > **haml**: `undefined` \| `string`
@@ -1863,6 +2899,22 @@ false
 #### handlebars-selector
 
 > **handlebars-selector**: `undefined` \| `string`
+
+#### haskell
+
+> **haskell**: `undefined` \| `string`
+
+#### haskell-selector
+
+> **haskell-selector**: `undefined` \| `string`
+
+#### haskell-wasm
+
+> **haskell-wasm**: `undefined` \| `string`
+
+#### haskell-wasm-selector
+
+> **haskell-wasm-selector**: `undefined` \| `string`
 
 #### hbs
 
@@ -1903,6 +2955,30 @@ false
 #### hpp-selector
 
 > **hpp-selector**: `undefined` \| `string`
+
+#### hs
+
+> **hs**: `undefined` \| `string`
+
+#### hs-selector
+
+> **hs-selector**: `undefined` \| `string`
+
+#### hs-wasm
+
+> **hs-wasm**: `undefined` \| `string`
+
+#### hs-wasm-selector
+
+> **hs-wasm-selector**: `undefined` \| `string`
+
+#### hswasm
+
+> **hswasm**: `undefined` \| `string`
+
+#### hswasm-selector
+
+> **hswasm-selector**: `undefined` \| `string`
 
 #### htm
 
@@ -2003,13 +3079,53 @@ and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolut
 
 > **jade-selector**: `undefined` \| `string`
 
+#### janet
+
+> **janet**: `undefined` \| `string`
+
+#### janet-selector
+
+> **janet-selector**: `undefined` \| `string`
+
+#### janet-wasm
+
+> **janet-wasm**: `undefined` \| `string`
+
+#### janet-wasm-selector
+
+> **janet-wasm-selector**: `undefined` \| `string`
+
 #### java
 
 > **java**: `undefined` \| `string`
 
+#### java-8
+
+> **java-8**: `undefined` \| `string`
+
+#### java-8-selector
+
+> **java-8-selector**: `undefined` \| `string`
+
 #### java-selector
 
 > **java-selector**: `undefined` \| `string`
+
+#### java-wasm
+
+> **java-wasm**: `undefined` \| `string`
+
+#### java-wasm-selector
+
+> **java-wasm-selector**: `undefined` \| `string`
+
+#### java8
+
+> **java8**: `undefined` \| `string`
+
+#### java8-selector
+
+> **java8-selector**: `undefined` \| `string`
 
 #### javascript
 
@@ -2042,6 +3158,30 @@ and [Custom Module Resolution](https://livecodes.io/docs/features/module-resolut
 #### js-selector
 
 > **js-selector**: `undefined` \| `string`
+
+#### js.ml
+
+> **ml**: `undefined` \| `string`
+
+#### js.ml-selector
+
+> **ml-selector**: `undefined` \| `string`
+
+#### js.nim
+
+> **nim**: `undefined` \| `string`
+
+#### js.nim-selector
+
+> **nim-selector**: `undefined` \| `string`
+
+#### js.ocaml
+
+> **ocaml**: `undefined` \| `string`
+
+#### js.ocaml-selector
+
+> **ocaml-selector**: `undefined` \| `string`
 
 #### json
 
@@ -2101,6 +3241,22 @@ otherwise horizontal.
 #### less-selector
 
 > **less-selector**: `undefined` \| `string`
+
+#### lfortran
+
+> **lfortran**: `undefined` \| `string`
+
+#### lfortran-selector
+
+> **lfortran-selector**: `undefined` \| `string`
+
+#### lhs
+
+> **lhs**: `undefined` \| `string`
+
+#### lhs-selector
+
+> **lhs-selector**: `undefined` \| `string`
 
 #### lineNumbers?
 
@@ -2209,6 +3365,14 @@ Sets how the playground loads:
 #### luawasm-selector
 
 > **luawasm-selector**: `undefined` \| `string`
+
+#### m
+
+> **m**: `undefined` \| `string`
+
+#### m-selector
+
+> **m-selector**: `undefined` \| `string`
 
 #### malina
 
@@ -2436,9 +3600,17 @@ false
 
 > **mli-selector**: `undefined` \| `string`
 
+#### mm
+
+> **mm**: `undefined` \| `string`
+
+#### mm-selector
+
+> **mm-selector**: `undefined` \| `string`
+
 #### mode?
 
-> `optional` **mode**: `"editor"` \| `"result"` \| `"full"` \| `"focus"` \| `"lite"` \| `"simple"` \| `"codeblock"`
+> `optional` **mode**: `"editor"` \| `"result"` \| `"full"` \| `"focus"` \| `"lite"` \| `"simple"` \| `"console"` \| `"codeblock"`
 
 Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
@@ -2472,9 +3644,65 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 > **mzn-selector**: `undefined` \| `string`
 
+#### nasm
+
+> **nasm**: `undefined` \| `string`
+
+#### nasm-selector
+
+> **nasm-selector**: `undefined` \| `string`
+
 #### new?
 
 > `optional` **new**: `""`
+
+#### nim
+
+> **nim**: `undefined` \| `string`
+
+#### nim-js
+
+> **nim-js**: `undefined` \| `string`
+
+#### nim-js-selector
+
+> **nim-js-selector**: `undefined` \| `string`
+
+#### nim-selector
+
+> **nim-selector**: `undefined` \| `string`
+
+#### nim-wasm
+
+> **nim-wasm**: `undefined` \| `string`
+
+#### nim-wasm-selector
+
+> **nim-wasm-selector**: `undefined` \| `string`
+
+#### nimble
+
+> **nimble**: `undefined` \| `string`
+
+#### nimble-selector
+
+> **nimble-selector**: `undefined` \| `string`
+
+#### nims
+
+> **nims**: `undefined` \| `string`
+
+#### nims-selector
+
+> **nims-selector**: `undefined` \| `string`
+
+#### nimwasm
+
+> **nimwasm**: `undefined` \| `string`
+
+#### nimwasm-selector
+
+> **nimwasm-selector**: `undefined` \| `string`
 
 #### njk
 
@@ -2496,17 +3724,97 @@ Sets the [display mode](https://livecodes.io/docs/features/display-modes).
 
 > **nunjucks-selector**: `undefined` \| `string`
 
+#### objc
+
+> **objc**: `undefined` \| `string`
+
+#### objc-selector
+
+> **objc-selector**: `undefined` \| `string`
+
+#### objc-wasm
+
+> **objc-wasm**: `undefined` \| `string`
+
+#### objc-wasm-selector
+
+> **objc-wasm-selector**: `undefined` \| `string`
+
+#### objc++
+
+> **objc++**: `undefined` \| `string`
+
+#### objc++-selector
+
+> **objc++-selector**: `undefined` \| `string`
+
+#### objcpp
+
+> **objcpp**: `undefined` \| `string`
+
+#### objcpp-selector
+
+> **objcpp-selector**: `undefined` \| `string`
+
+#### objcpp-wasm
+
+> **objcpp-wasm**: `undefined` \| `string`
+
+#### objcpp-wasm-selector
+
+> **objcpp-wasm-selector**: `undefined` \| `string`
+
+#### objective-c
+
+> **objective-c**: `undefined` \| `string`
+
+#### objective-c-selector
+
+> **objective-c-selector**: `undefined` \| `string`
+
+#### objective-c++
+
+> **objective-c++**: `undefined` \| `string`
+
+#### objective-c++-selector
+
+> **objective-c++-selector**: `undefined` \| `string`
+
 #### ocaml
 
 > **ocaml**: `undefined` \| `string`
+
+#### ocaml-js
+
+> **ocaml-js**: `undefined` \| `string`
+
+#### ocaml-js-selector
+
+> **ocaml-js-selector**: `undefined` \| `string`
 
 #### ocaml-selector
 
 > **ocaml-selector**: `undefined` \| `string`
 
+#### odin
+
+> **odin**: `undefined` \| `string`
+
+#### odin-selector
+
+> **odin-selector**: `undefined` \| `string`
+
+#### odin-wasm
+
+> **odin-wasm**: `undefined` \| `string`
+
+#### odin-wasm-selector
+
+> **odin-wasm-selector**: `undefined` \| `string`
+
 #### params?
 
-> `optional` **params**: \{ appUrl?: string \| undefined; params?: ... \| undefined; config?: string \| (Partial\<Config\> & string) \| undefined; headless?: boolean \| undefined; import?: string \| undefined; ... 497 more ...; compiled?: "" \| ... 5 more ... \| undefined; \} \| undefined
+> `optional` **params**: \{ appUrl?: string \| undefined; params?: ... \| undefined; config?: string \| (Partial\<Config\> & string) \| undefined; headless?: boolean \| undefined; import?: string \| undefined; ... 770 more ...; compiled?: "" \| ... 5 more ... \| undefined; \} \| undefined
 
 An object that represents the [URL Query parameters](https://livecodes.io/docs/configuration/query-params), that can be used to configure the playground.
 
@@ -2528,6 +3836,30 @@ createPlayground('#container', {
 // use params
 createPlayground('#container', { params: { md: '# Hello World!' } });
 ```
+
+#### pas
+
+> **pas**: `undefined` \| `string`
+
+#### pas-selector
+
+> **pas-selector**: `undefined` \| `string`
+
+#### pas2js
+
+> **pas2js**: `undefined` \| `string`
+
+#### pas2js-selector
+
+> **pas2js-selector**: `undefined` \| `string`
+
+#### pascal
+
+> **pascal**: `undefined` \| `string`
+
+#### pascal-selector
+
+> **pascal-selector**: `undefined` \| `string`
 
 #### perl
 
@@ -2681,6 +4013,14 @@ createPlayground('#container', { params: { md: '# Hello World!' } });
 
 > **sql-selector**: `undefined` \| `string`
 
+#### pp
+
+> **pp**: `undefined` \| `string`
+
+#### pp-selector
+
+> **pp-selector**: `undefined` \| `string`
+
 #### preview?
 
 > `optional` **preview**: `boolean`
@@ -2796,6 +4136,22 @@ createPlayground('#container', { params: { md: '# Hello World!' } });
 #### raw?
 
 > `optional` **raw**: [`Language`](../type-aliases/Language.md)
+
+#### razor
+
+> **razor**: `undefined` \| `string`
+
+#### razor-selector
+
+> **razor-selector**: `undefined` \| `string`
+
+#### razor-wasm
+
+> **razor-wasm**: `undefined` \| `string`
+
+#### razor-wasm-selector
+
+> **razor-wasm-selector**: `undefined` \| `string`
 
 #### rb
 
@@ -2940,6 +4296,14 @@ true
 
 > **rescript**: `undefined` \| `string`
 
+#### rescript-ocaml
+
+> **rescript-ocaml**: `undefined` \| `string`
+
+#### rescript-ocaml-selector
+
+> **rescript-ocaml-selector**: `undefined` \| `string`
+
 #### rescript-selector
 
 > **rescript-selector**: `undefined` \| `string`
@@ -3008,6 +4372,22 @@ true
 
 > **rlang-selector**: `undefined` \| `string`
 
+#### rs
+
+> **rs**: `undefined` \| `string`
+
+#### rs-selector
+
+> **rs-selector**: `undefined` \| `string`
+
+#### rs-wasm
+
+> **rs-wasm**: `undefined` \| `string`
+
+#### rs-wasm-selector
+
+> **rs-wasm-selector**: `undefined` \| `string`
+
 #### rstats
 
 > **rstats**: `undefined` \| `string`
@@ -3056,6 +4436,22 @@ true
 
 > **rubywasm-selector**: `undefined` \| `string`
 
+#### rust
+
+> **rust**: `undefined` \| `string`
+
+#### rust-selector
+
+> **rust-selector**: `undefined` \| `string`
+
+#### rust-wasm
+
+> **rust-wasm**: `undefined` \| `string`
+
+#### rust-wasm-selector
+
+> **rust-wasm-selector**: `undefined` \| `string`
+
 #### sass
 
 > **sass**: `undefined` \| `string`
@@ -3063,6 +4459,22 @@ true
 #### sass-selector
 
 > **sass-selector**: `undefined` \| `string`
+
+#### scala
+
+> **scala**: `undefined` \| `string`
+
+#### scala-selector
+
+> **scala-selector**: `undefined` \| `string`
+
+#### scala-wasm
+
+> **scala-wasm**: `undefined` \| `string`
+
+#### scala-wasm-selector
+
+> **scala-wasm-selector**: `undefined` \| `string`
 
 #### scheme
 
@@ -3500,6 +4912,14 @@ overriding the default title set to the language name
 
 > **swift-selector**: `undefined` \| `string`
 
+#### swift-wasm
+
+> **swift-wasm**: `undefined` \| `string`
+
+#### swift-wasm-selector
+
+> **swift-wasm-selector**: `undefined` \| `string`
+
 #### tabSize?
 
 > `optional` **tabSize**: `number`
@@ -3689,6 +5109,46 @@ Also used in [code formatting](https://livecodes.io/docs/features/code-format).
 false
 ```
 
+#### v
+
+> **v**: `undefined` \| `string`
+
+#### v-selector
+
+> **v-selector**: `undefined` \| `string`
+
+#### v-wasm
+
+> **v-wasm**: `undefined` \| `string`
+
+#### v-wasm-selector
+
+> **v-wasm-selector**: `undefined` \| `string`
+
+#### vb
+
+> **vb**: `undefined` \| `string`
+
+#### vb-selector
+
+> **vb-selector**: `undefined` \| `string`
+
+#### vb-wasm
+
+> **vb-wasm**: `undefined` \| `string`
+
+#### vb-wasm-selector
+
+> **vb-wasm-selector**: `undefined` \| `string`
+
+#### vbnet
+
+> **vbnet**: `undefined` \| `string`
+
+#### vbnet-selector
+
+> **vbnet-selector**: `undefined` \| `string`
+
 #### vento
 
 > **vento**: `undefined` \| `string`
@@ -3722,6 +5182,22 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 ```ts
 "split"
 ```
+
+#### vlang
+
+> **vlang**: `undefined` \| `string`
+
+#### vlang-selector
+
+> **vlang-selector**: `undefined` \| `string`
+
+#### vsh
+
+> **vsh**: `undefined` \| `string`
+
+#### vsh-selector
+
+> **vsh-selector**: `undefined` \| `string`
 
 #### vto
 
@@ -3771,6 +5247,38 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 
 > **wasm-selector**: `undefined` \| `string`
 
+#### wasm.ada
+
+> **ada**: `undefined` \| `string`
+
+#### wasm.ada-selector
+
+> **ada-selector**: `undefined` \| `string`
+
+#### wasm.asm
+
+> **asm**: `undefined` \| `string`
+
+#### wasm.asm-selector
+
+> **asm-selector**: `undefined` \| `string`
+
+#### wasm.c
+
+> **c**: `undefined` \| `string`
+
+#### wasm.c-selector
+
+> **c-selector**: `undefined` \| `string`
+
+#### wasm.cobol
+
+> **cobol**: `undefined` \| `string`
+
+#### wasm.cobol-selector
+
+> **cobol-selector**: `undefined` \| `string`
+
 #### wasm.cpp
 
 > **cpp**: `undefined` \| `string`
@@ -3787,6 +5295,22 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 
 > **cs-selector**: `undefined` \| `string`
 
+#### wasm.fs
+
+> **fs**: `undefined` \| `string`
+
+#### wasm.fs-selector
+
+> **fs-selector**: `undefined` \| `string`
+
+#### wasm.fsx
+
+> **fsx**: `undefined` \| `string`
+
+#### wasm.fsx-selector
+
+> **fsx-selector**: `undefined` \| `string`
+
 #### wasm.go
 
 > **go**: `undefined` \| `string`
@@ -3795,6 +5319,22 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 
 > **go-selector**: `undefined` \| `string`
 
+#### wasm.hs
+
+> **hs**: `undefined` \| `string`
+
+#### wasm.hs-selector
+
+> **hs-selector**: `undefined` \| `string`
+
+#### wasm.janet
+
+> **janet**: `undefined` \| `string`
+
+#### wasm.janet-selector
+
+> **janet-selector**: `undefined` \| `string`
+
 #### wasm.lua
 
 > **lua**: `undefined` \| `string`
@@ -3802,6 +5342,30 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 #### wasm.lua-selector
 
 > **lua-selector**: `undefined` \| `string`
+
+#### wasm.m
+
+> **m**: `undefined` \| `string`
+
+#### wasm.m-selector
+
+> **m-selector**: `undefined` \| `string`
+
+#### wasm.mm
+
+> **mm**: `undefined` \| `string`
+
+#### wasm.mm-selector
+
+> **mm-selector**: `undefined` \| `string`
+
+#### wasm.nim
+
+> **nim**: `undefined` \| `string`
+
+#### wasm.nim-selector
+
+> **nim-selector**: `undefined` \| `string`
 
 #### wasm.php
 
@@ -3819,6 +5383,14 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 
 > **py-selector**: `undefined` \| `string`
 
+#### wasm.razor
+
+> **razor**: `undefined` \| `string`
+
+#### wasm.razor-selector
+
+> **razor-selector**: `undefined` \| `string`
+
 #### wasm.rb
 
 > **rb**: `undefined` \| `string`
@@ -3826,6 +5398,46 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 #### wasm.rb-selector
 
 > **rb-selector**: `undefined` \| `string`
+
+#### wasm.rs
+
+> **rs**: `undefined` \| `string`
+
+#### wasm.rs-selector
+
+> **rs-selector**: `undefined` \| `string`
+
+#### wasm.scala
+
+> **scala**: `undefined` \| `string`
+
+#### wasm.scala-selector
+
+> **scala-selector**: `undefined` \| `string`
+
+#### wasm.swift
+
+> **swift**: `undefined` \| `string`
+
+#### wasm.swift-selector
+
+> **swift-selector**: `undefined` \| `string`
+
+#### wasm.v
+
+> **v**: `undefined` \| `string`
+
+#### wasm.v-selector
+
+> **v-selector**: `undefined` \| `string`
+
+#### wasm.vb
+
+> **vb**: `undefined` \| `string`
+
+#### wasm.vb-selector
+
+> **vb-selector**: `undefined` \| `string`
 
 #### wast
 
@@ -3873,6 +5485,22 @@ false
 
 > `optional` **x**: `string`
 
+#### x86
+
+> **x86**: `undefined` \| `string`
+
+#### x86-64
+
+> **x86-64**: `undefined` \| `string`
+
+#### x86-64-selector
+
+> **x86-64-selector**: `undefined` \| `string`
+
+#### x86-selector
+
+> **x86-selector**: `undefined` \| `string`
+
 #### xht
 
 > **xht**: `undefined` \| `string`
@@ -3889,6 +5517,22 @@ false
 
 > **xml-selector**: `undefined` \| `string`
 
+#### zig
+
+> **zig**: `undefined` \| `string`
+
+#### zig-selector
+
+> **zig-selector**: `undefined` \| `string`
+
+#### zig-wasm
+
+> **zig-wasm**: `undefined` \| `string`
+
+#### zig-wasm-selector
+
+> **zig-wasm-selector**: `undefined` \| `string`
+
 #### zoom?
 
 > `optional` **zoom**: `1` \| `0.5` \| `0.25`
@@ -3897,7 +5541,7 @@ Sets result page [zoom level](https://livecodes.io/docs/features/result#result-p
 
 #### Defined in
 
-[src/sdk/models.ts:1721](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1721)
+[src/sdk/models.ts:1921](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1921)
 
 ***
 
@@ -3910,7 +5554,7 @@ Allowed valued can be found [here](https://livecodes.io/docs/api/internal/type-a
 
 #### Defined in
 
-[src/sdk/models.ts:1767](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1767)
+[src/sdk/models.ts:1967](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1967)
 
 ***
 
@@ -3934,4 +5578,4 @@ The `view` option has been moved to `config.view`. For headless mode use `headle
 
 #### Defined in
 
-[src/sdk/models.ts:1780](https://github.com/live-codes/livecodes/blob/a9e1ee5301dfecfbec8fbeb82682e7aac5851e35/src/sdk/models.ts#L1780)
+[src/sdk/models.ts:1980](https://github.com/harrisbmark/livecodes/blob/e37354253f1250751cfa148e507487c0f307b881/src/sdk/models.ts#L1980)

@@ -414,7 +414,7 @@ Sets the [display mode](../features/display-modes.html.md).
 
 ### `tools`
 
-Type: [`Partial<{ enabled: Array<'console' | 'compiled' | 'tests'> | 'all'; active: 'console' | 'compiled' | 'tests' | ''; status: 'closed' | 'open' | 'full' | 'none' | ''; }>`](../api/interfaces/Config.md#tools)
+Type: [`Partial<{ enabled: Array<'console' | 'compiled' | 'tests' | 'zoom'> | 'all'; active: 'console' | 'compiled' | 'tests' | ''; status: 'closed' | 'open' | 'full' | 'none' | ''; }>`](../api/interfaces/Config.md#tools)
 
 Default: `{ enabled: 'all', active: '', status: '' }`
 
@@ -447,6 +447,14 @@ Type: [`1 | 0.5 | 0.25`](../api/interfaces/Config.md#zoom)
 Default: `1`
 
 Sets result page [zoom level](../features/result.html.md)#result-page-zoom).
+
+### `disableHomeLink`
+
+Type: [`boolean`](../api/interfaces/Config.md#disablehomelink)
+
+Default: `false`
+
+If `true`, the link on LiveCodes logo ("Edit on LiveCodes") is disabled in [embeds](../features/embeds.html.md).
 
 ## User Settings
 
